@@ -44,7 +44,7 @@ function heatFill(x: number | null, cap: number) {
   if (x === null) return 'url(#hatch)'
   const t = Math.min(1, Math.abs(x) / cap)
   const pct = Math.round(t * 92)
-  return x < 0 ? `color-mix(in oklab, var(--limb-1) ${pct}%, var(--surface))` : `color-mix(in oklab, var(--limb-3) ${pct}%, var(--surface))`
+  return x < 0 ? `color-mix(in oklab, var(--limb-1) ${pct}%, var(--surface))` : `color-mix(in oklab, var(--limb-4) ${pct}%, var(--surface))`
 }
 
 export function Evidence() {
@@ -364,7 +364,7 @@ function Slope({ gene }: { gene: Gene }) {
         if (p.a === null || p.b === null) return null
         const up = p.b > p.a
         const ly = labelY.get(p.id) ?? y(p.b)
-        const col = up ? 'var(--limb-3)' : 'var(--limb-1)'
+        const col = up ? 'var(--limb-4)' : 'var(--limb-1)'
         return (
           <g key={p.id}>
             <line x1={x0} x2={x1} y1={y(p.a)} y2={y(p.b)} stroke={col} strokeWidth="2" strokeLinecap="round" />
@@ -410,7 +410,7 @@ function Agreement() {
               width={bw - 10}
               height={Math.max(0, h - pad.b - y(b))}
               rx="3"
-              fill={unanimous ? (k === 0 ? 'var(--limb-1)' : 'var(--limb-3)') : 'color-mix(in oklab, var(--muted) 45%, var(--surface))'}
+              fill={unanimous ? (k === 0 ? 'var(--limb-1)' : 'var(--limb-4)') : 'color-mix(in oklab, var(--muted) 45%, var(--surface))'}
             />
             <text x={pad.l + k * bw + bw / 2} y={y(b) - 5} textAnchor="middle" style={{ fill: 'var(--ink)', fontWeight: 600 }}>
               {b}
@@ -475,7 +475,7 @@ function Volcano({ selected, onSelect }: { selected: string; onSelect: (s: strin
               cx={x(g.mean!)}
               cy={y(-Math.log10(g.p!))}
               r={isSel ? 6 : sig ? 4 : 2.6}
-              fill={sig ? (g.mean! > 0 ? 'var(--limb-3)' : 'var(--limb-1)') : 'color-mix(in oklab, var(--muted) 50%, var(--surface))'}
+              fill={sig ? (g.mean! > 0 ? 'var(--limb-4)' : 'var(--limb-1)') : 'color-mix(in oklab, var(--muted) 50%, var(--surface))'}
               stroke={isSel ? 'var(--ink)' : 'var(--surface)'}
               strokeWidth={isSel ? 2 : 1}
               style={{ cursor: 'pointer' }}

@@ -11,7 +11,7 @@ import { Method } from './views/Method'
 import { Settings } from './views/Settings'
 import { Welcome } from './views/Welcome'
 
-const ROUTES: Route[] = ['status', 'checkin', 'act', 'evidence', 'method', 'settings']
+const ROUTES: Route[] = ['about', 'status', 'checkin', 'act', 'evidence', 'method', 'settings']
 
 function useRoute(): [Route, (r: Route) => void] {
   const parse = () => {
@@ -85,6 +85,7 @@ export default function App() {
 
   useEffect(() => {
     const names: Record<Route, string> = {
+      about: 'Overview',
       status: 'Status',
       checkin: 'Check in',
       act: 'Act',
@@ -92,10 +93,38 @@ export default function App() {
       method: 'Method',
       settings: 'Settings',
     }
-    document.title = store.state.onboarded ? `${names[route]} | Tether` : 'Tether'
+    document.title = store.state.onboarded || route === 'evidence' || route === 'method' ?`${names[route]} | Tether` : 'Tether'
   }, [route, store.state.onboarded])
 
-  if (!store.state.onboarded) {
+  if (!store.state.onboarded && (route === 'evidence' || route === 'method')) {
+    // the analysis and the method are open to read without setting anything up
+    const Page = route === 'evidence' ? Evidence : Method
+    return (
+      <Ctx.Provider value={ctx}>
+        <div className="limb" />
+        <header className="public-top">
+          <a className="brand" href="#/" style={{ padding: 0 }}>
+            <Logo />
+            Tether
+          </a>
+          <nav className="land-links" aria-label="Project">
+            <a href="#/">Overview</a>
+            <a href="#/evidence" aria-current={route === 'evidence' ? 'page' : undefined}>
+              The data
+            </a>
+            <a href="#/method" aria-current={route === 'method' ? 'page' : undefined}>
+              Method
+            </a>
+          </nav>
+        </header>
+        <main className="main public-main">
+          <Page />
+        </main>
+      </Ctx.Provider>
+    )
+  }
+
+  if (!store.state.onboarded || route === 'about') {
     return (
       <Ctx.Provider value={ctx}>
         <div className="limb" />
@@ -105,7 +134,7 @@ export default function App() {
     )
   }
 
-  const View = { status: Status, checkin: CheckIn, act: Act, evidence: Evidence, method: Method, settings: Settings }[route]
+  const View = { about: Welcome, status: Status, checkin: CheckIn, act: Act, evidence: Evidence, method: Method, settings: Settings }[route]
 
   return (
     <Ctx.Provider value={ctx}>
@@ -137,6 +166,9 @@ export default function App() {
             ))}
           </nav>
           <div className="rail-foot">
+            <a className="small ink2" href="#/about">
+              Project overview
+            </a>
             {store.state.demo && <span className="demo-flag">Demo data, simulated</span>}
             <div className="small ink2">
               {store.state.profile.callsign || 'Crew member'}

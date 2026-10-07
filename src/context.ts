@@ -1,7 +1,7 @@
 import { createContext, useContext } from 'react'
 import type { useStore } from './lib/store'
 
-export type Route = 'status' | 'checkin' | 'act' | 'evidence' | 'method' | 'settings'
+export type Route = 'about' | 'status' | 'checkin' | 'act' | 'evidence' | 'method' | 'settings'
 
 type Store = ReturnType<typeof useStore>
 

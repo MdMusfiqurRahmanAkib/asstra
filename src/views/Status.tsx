@@ -72,10 +72,10 @@ export function Status() {
               <i className="lg-ring" /> Your baseline
             </span>
             <span>
-              <i className="lg-dash watch" /> Watch, 2 spreads out
+              <i className="lg-dash watch" /> Watch, outside your usual range
             </span>
             <span>
-              <i className="lg-dash act" /> Act, 3 spreads out
+              <i className="lg-dash act" /> Act, far outside
             </span>
           </div>
         </section>
@@ -225,9 +225,7 @@ function RingDetail({ r }: { r: Reading }) {
       </div>
       {r.median !== undefined && (
         <div className="xsmall muted num">
-          usual {fmt(r.median, ind)}
-          {r.z !== undefined && `, ${r.z >= 0 ? '+' : '−'}${Math.abs(r.z).toFixed(1)} spreads`}
-        </div>
+          usual {fmt(r.median, ind)}        </div>
       )}
       <span className={`chip ${r.level}`} style={{ marginTop: 8 }}>
         {levelWords[r.level]}

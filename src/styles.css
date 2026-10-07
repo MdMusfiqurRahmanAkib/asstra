@@ -11,13 +11,13 @@
   --ok: #23806f;
   --watch: #a86e06;
   --act: #be3346;
-  --focus: #5644b8;
-  --limb-1: #24307f;
-  --limb-2: #5644b8;
-  --limb-3: #b4579a;
-  --limb-4: #efaf5b;
+  --focus: #1d6fd6;
+  --limb-1: #0b3d91;
+  --limb-2: #1d6fd6;
+  --limb-3: #4fb3d9;
+  --limb-4: #f0a23b;
   --limb: linear-gradient(90deg, var(--limb-1) 0%, var(--limb-2) 40%, var(--limb-3) 72%, var(--limb-4) 100%);
-  --band: rgba(86, 68, 184, 0.1);
+  --band: rgba(29, 111, 214, 0.1);
   --shadow: 0 1px 2px rgba(23, 32, 51, 0.06), 0 8px 24px -12px rgba(23, 32, 51, 0.18);
 
   --s-1: 0.75rem;
@@ -29,8 +29,8 @@
   --s5: 3.05rem;
 
   --r-sm: 6px;
-  --r-md: 12px;
-  --r-lg: 20px;
+  --r-md: 8px;
+  --r-lg: 12px;
 
   color-scheme: light;
   font-family: 'Public Sans Variable', system-ui, sans-serif;
@@ -54,12 +54,12 @@
     --ok: #4fbfa8;
     --watch: #e3a93a;
     --act: #f06b7d;
-    --focus: #a99cff;
-    --limb-1: #4458d6;
-    --limb-2: #7d6cf0;
-    --limb-3: #d77ab9;
+    --focus: #8fbcff;
+    --limb-1: #3d7be8;
+    --limb-2: #58a6f5;
+    --limb-3: #86d3ee;
     --limb-4: #f5c27a;
-    --band: rgba(169, 156, 255, 0.13);
+    --band: rgba(143, 188, 255, 0.13);
     --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 10px 30px -14px rgba(0, 0, 0, 0.7);
     color-scheme: dark;
   }
@@ -76,12 +76,12 @@
   --ok: #4fbfa8;
   --watch: #e3a93a;
   --act: #f06b7d;
-  --focus: #a99cff;
-  --limb-1: #4458d6;
-  --limb-2: #7d6cf0;
-  --limb-3: #d77ab9;
+  --focus: #8fbcff;
+  --limb-1: #3d7be8;
+  --limb-2: #58a6f5;
+  --limb-3: #86d3ee;
   --limb-4: #f5c27a;
-  --band: rgba(169, 156, 255, 0.13);
+  --band: rgba(143, 188, 255, 0.13);
   --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 10px 30px -14px rgba(0, 0, 0, 0.7);
   color-scheme: dark;
 }
@@ -381,7 +381,7 @@ textarea {
   gap: 8px;
   height: 40px;
   padding: 0 16px;
-  border-radius: 999px;
+  border-radius: var(--r-sm);
   border: 1px solid var(--line);
   background: var(--surface);
   color: var(--ink);
@@ -432,7 +432,7 @@ textarea {
   gap: 6px;
   height: 24px;
   padding: 0 10px;
-  border-radius: 999px;
+  border-radius: var(--r-sm);
   font-size: var(--s-1);
   font-weight: 600;
   white-space: nowrap;
@@ -480,7 +480,7 @@ textarea {
   color: var(--ink-2);
   background: var(--surface-2);
   border: 1px dashed var(--line);
-  border-radius: 999px;
+  border-radius: var(--r-sm);
   padding: 4px 10px;
 }
 
@@ -530,7 +530,7 @@ textarea.input {
   background: var(--ink);
   color: var(--bg);
   padding: 10px 18px;
-  border-radius: 999px;
+  border-radius: var(--r-sm);
   font-size: var(--s0);
   font-weight: 560;
   z-index: 60;

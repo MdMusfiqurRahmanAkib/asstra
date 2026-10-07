@@ -89,7 +89,8 @@ export function read(ind: Indicator, entries: Entry[], profile: Profile, date: s
 
   if (r.level === 'watch' || r.level === 'act') {
     const dir = (r.z ?? 0) > 0 ? 'above' : 'below'
-    reasons.push(`${Math.abs(r.z ?? 0).toFixed(1)} spreads ${dir} your baseline`)
+    const far = r.level === 'act' ? 'far ' : ''
+    reasons.push(`${far}${dir} your usual range, ${Math.abs(r.z ?? 0).toFixed(1)} times your normal day-to-day variation`)
   }
 
   // Persistence: three logged days in a row outside baseline in the concerning direction.

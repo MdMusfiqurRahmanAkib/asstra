@@ -245,7 +245,7 @@
 .dose-bar {
   display: flex;
   height: 10px;
-  border-radius: 999px;
+  border-radius: var(--r-sm);
   background: var(--surface-2);
   overflow: hidden;
   margin-top: 14px;
@@ -442,7 +442,7 @@
   display: flex;
   gap: 4px;
   padding: 3px;
-  border-radius: 999px;
+  border-radius: var(--r-sm);
   background: var(--surface-2);
   width: fit-content;
   max-width: 100%;
@@ -454,7 +454,7 @@
   min-width: 40px;
   padding: 0 12px;
   border: 0;
-  border-radius: 999px;
+  border-radius: var(--r-sm);
   background: transparent;
   cursor: pointer;
   font-weight: 560;
@@ -490,7 +490,7 @@
 .sym {
   height: 36px;
   padding: 0 14px;
-  border-radius: 999px;
+  border-radius: var(--r-sm);
   border: 1px solid var(--line);
   background: var(--surface);
   cursor: pointer;
@@ -514,7 +514,7 @@
   flex-wrap: wrap;
   padding: 12px 12px 12px 20px;
   background: var(--surface);
-  border-radius: 999px;
+  border-radius: var(--r-sm);
   box-shadow: var(--shadow);
   border: 1px solid var(--line);
 }
@@ -697,60 +697,298 @@
   gap: 18px 24px;
 }
 
-/* ---------- Welcome ---------- */
+/* ---------- Landing ---------- */
 
-.welcome {
-  min-height: 100dvh;
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  align-items: center;
-  gap: 40px;
-  padding: 48px clamp(16px, 6vw, 96px);
-  max-width: 1280px;
+.land {
+  max-width: 1120px;
   margin: 0 auto;
+  padding: 0 clamp(16px, 5vw, 48px);
 }
 
-.welcome-copy {
+.land-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 22px 0 18px;
+  border-bottom: 1px solid var(--line);
+}
+
+.land-links {
+  display: flex;
+  gap: 20px;
+  font-size: var(--s0);
+  font-weight: 520;
+}
+
+.land-links a {
+  color: var(--ink-2);
+  text-decoration: none;
+}
+
+.land-links a:hover,
+.land-links a[aria-current='page'] {
+  color: var(--ink);
+  text-decoration: underline;
+}
+
+.land-hero {
   display: grid;
-  gap: 22px;
-  align-content: center;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  align-items: center;
+  gap: 48px;
+  padding: 56px 0 64px;
 }
 
-.welcome-h {
-  font-size: clamp(2.2rem, 4.6vw, 3.6rem);
-  line-height: 1.04;
-  letter-spacing: -0.035em;
+.land-hero-copy {
+  display: grid;
+  gap: 20px;
+}
+
+.land-kicker {
+  font-size: var(--s0);
+  font-weight: 600;
+  color: var(--limb-2);
+}
+
+.land-h {
+  font-size: clamp(2rem, 4vw, 3.05rem);
+  line-height: 1.08;
+  letter-spacing: -0.03em;
   font-weight: 680;
-  max-width: 14ch;
+  max-width: 16ch;
 }
 
-.welcome-lede {
+.land-lede {
   font-size: var(--s2);
   line-height: 1.5;
   color: var(--ink-2);
   max-width: 34em;
 }
 
-.welcome-foot {
-  max-width: 46em;
-  padding-top: 18px;
+.land-setup {
+  max-width: 420px;
+}
+
+.land-ring {
+  margin: 0;
+  display: grid;
+  gap: 8px;
+  justify-items: center;
+  text-align: center;
+}
+
+.land-ring > div {
+  width: 100%;
+  max-width: 440px;
+}
+
+.land-ring figcaption {
+  max-width: 44ch;
+}
+
+.land-sec {
+  padding: 48px 0;
   border-top: 1px solid var(--line);
 }
 
-.welcome-ring {
-  max-width: 520px;
-  width: 100%;
+.land-sec > h2 {
+  margin-bottom: 20px;
+}
+
+.land-sec h3 {
+  margin-bottom: 6px;
+}
+
+.land-two {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 40px;
+  align-items: start;
+}
+
+.land-quote {
+  margin: 0 0 16px;
+  padding-left: 16px;
+  border-left: 3px solid var(--limb-2);
+  font-size: var(--s2);
+  line-height: 1.45;
+}
+
+.land-list {
+  margin: 0 0 12px;
+  padding-left: 20px;
+  display: grid;
+  gap: 6px;
+}
+
+.land-list.wide {
+  gap: 12px;
+  max-width: 72ch;
+}
+
+.land-steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 32px;
+}
+
+.land-step-n {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  margin-bottom: 12px;
+  border-radius: 50%;
+  background: var(--ink);
+  color: var(--bg);
+  font-weight: 650;
+}
+
+.land-intro {
+  margin-bottom: 28px;
+}
+
+.land-stats {
+  display: grid;
+  gap: 18px;
+}
+
+.land-stats div {
+  display: grid;
+  grid-template-columns: 64px minmax(0, 1fr);
+  align-items: baseline;
+  gap: 12px;
+}
+
+.land-stats strong {
+  font-size: var(--s5);
+  line-height: 1;
+  font-weight: 680;
+  letter-spacing: -0.03em;
+}
+
+.land-stats span {
+  color: var(--ink-2);
+}
+
+.land-agree {
+  margin: 0;
+  min-width: 0;
+}
+
+.agree-grid {
+  display: grid;
+  grid-template-columns: repeat(21, minmax(0, 1fr));
+  gap: 3px;
+}
+
+.agree-col {
+  display: grid;
+  align-content: start;
+  gap: 3px;
+}
+
+.agree-col i,
+.land-agree .key {
+  display: block;
+  aspect-ratio: 1;
+  border-radius: 2px;
+}
+
+.agree-col i.up,
+.land-agree .key.up {
+  background: var(--limb-4);
+}
+
+.agree-col i.down,
+.land-agree .key.down {
+  background: var(--limb-1);
+}
+
+.land-agree .key {
+  display: inline-block;
+  width: 10px;
+  margin: 0 4px 0 8px;
+  vertical-align: -1px;
+}
+
+.agree-name {
+  writing-mode: vertical-rl;
   justify-self: center;
+  padding-top: 4px;
+  font-size: 10px;
+  line-height: 1;
+  color: var(--ink-2);
+}
+
+.land-agree figcaption {
+  margin-top: 10px;
+}
+
+.land-take {
+  margin: 28px 0 10px;
+  font-size: var(--s2);
+  line-height: 1.45;
+  font-weight: 560;
+  max-width: 44em;
+}
+
+.land-domains {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px 32px;
+}
+
+.land-domains p + p {
+  margin-top: 8px;
+}
+
+.land-foot {
+  display: grid;
+  gap: 6px;
+  padding: 28px 0 48px;
+  border-top: 1px solid var(--line);
+}
+
+.public-top {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 22px clamp(16px, 5vw, 48px) 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.public-main {
+  margin: 0 auto;
 }
 
 @media (max-width: 860px) {
-  .welcome {
+  .land-hero {
     grid-template-columns: 1fr;
-    padding-top: 32px;
-    gap: 8px;
+    gap: 28px;
+    padding: 32px 0 40px;
   }
-  .welcome-ring {
-    order: -1;
+  .land-two,
+  .land-steps {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .land-domains {
+    grid-template-columns: 1fr;
+  }
+  .land-sec {
+    padding: 36px 0;
+  }
+  .land-links {
+    gap: 14px;
+  }
+  .land-ring > div {
     max-width: 300px;
   }
 }
