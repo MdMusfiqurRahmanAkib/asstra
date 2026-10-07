@@ -2,21 +2,37 @@ import { useEffect, useMemo, useState } from 'react'
 import { Ctx, type AppCtx, type Route } from './context'
 import { useStore, todayISO, flightDay } from './lib/store'
 import { readAll, overall } from './lib/baseline'
-import { IconAct, IconCheckin, IconEvidence, IconMethod, IconMoon, IconSettings, IconStatus, IconSun, Logo } from './components/Icons'
+import { demoState } from './lib/demo'
+import { IconAct, IconCheckin, IconMoon, IconSettings, IconStatus, IconSun, Logo } from './components/Icons'
+import { SiteFooter, SiteHeader } from './components/Site'
+import { Home } from './views/Home'
+import { About } from './views/About'
+import { Evidence } from './views/Evidence'
+import { Method } from './views/Method'
 import { Status } from './views/Status'
 import { CheckIn } from './views/CheckIn'
 import { Act } from './views/Act'
-import { Evidence } from './views/Evidence'
-import { Method } from './views/Method'
 import { Settings } from './views/Settings'
-import { Welcome } from './views/Welcome'
 
-const ROUTES: Route[] = ['about', 'status', 'checkin', 'act', 'evidence', 'method', 'settings']
+// Site pages are open to everyone. App pages need a profile or the demo.
+const SITE: Route[] = ['home', 'evidence', 'method', 'about']
+const APP: Route[] = ['status', 'checkin', 'act', 'settings']
+
+const TITLES: Record<Route, string> = {
+  home: 'Tether: a daily health self-check for astronauts',
+  evidence: 'The data | Tether',
+  method: 'How it works | Tether',
+  about: 'About | Tether',
+  status: 'Status | Tether',
+  checkin: 'Check in | Tether',
+  act: 'Act | Tether',
+  settings: 'Settings | Tether',
+}
 
 function useRoute(): [Route, (r: Route) => void] {
   const parse = () => {
     const h = location.hash.replace(/^#\/?/, '').split('?')[0] as Route
-    return ROUTES.includes(h) ? h : 'status'
+    return SITE.includes(h) || APP.includes(h) ? h : 'home'
   }
   const [route, set] = useState<Route>(parse)
   useEffect(() => {
@@ -52,14 +68,14 @@ function useTheme() {
   return { isDark, toggle: () => setTheme(isDark ? 'light' : 'dark') }
 }
 
-const NAV: { id: Route; label: string; Icon: typeof IconStatus; tab?: boolean }[] = [
-  { id: 'status', label: 'Status', Icon: IconStatus, tab: true },
-  { id: 'checkin', label: 'Check in', Icon: IconCheckin, tab: true },
-  { id: 'act', label: 'Act', Icon: IconAct, tab: true },
-  { id: 'evidence', label: 'Evidence', Icon: IconEvidence, tab: true },
-  { id: 'method', label: 'Method', Icon: IconMethod },
-  { id: 'settings', label: 'Settings', Icon: IconSettings, tab: true },
+const NAV: { id: Route; label: string; Icon: typeof IconStatus }[] = [
+  { id: 'status', label: 'Status', Icon: IconStatus },
+  { id: 'checkin', label: 'Check in', Icon: IconCheckin },
+  { id: 'act', label: 'Act', Icon: IconAct },
+  { id: 'settings', label: 'Settings', Icon: IconSettings },
 ]
+
+const APP_VIEWS = { status: Status, checkin: CheckIn, act: Act, settings: Settings }
 
 export default function App() {
   const store = useStore()
@@ -67,12 +83,20 @@ export default function App() {
   const [toastMsg, setToast] = useState<string | null>(null)
   const { isDark, toggle } = useTheme()
   const today = todayISO()
+  const { onboarded } = store.state
+
+  // without a profile there is nothing to show in the app, so its pages fall back to the overview
+  const page: Route = APP.includes(route) && !onboarded ? 'home' : route
 
   useEffect(() => {
     if (!toastMsg) return
     const t = setTimeout(() => setToast(null), 2600)
     return () => clearTimeout(t)
   }, [toastMsg])
+
+  useEffect(() => {
+    document.title = TITLES[page]
+  }, [page])
 
   const actCount = useMemo(
     () => readAll(store.state.entries, store.state.profile, today).filter((r) => r.level === 'act').length,
@@ -83,92 +107,80 @@ export default function App() {
 
   const ctx: AppCtx = { ...store, today, go, toast: setToast }
 
-  useEffect(() => {
-    const names: Record<Route, string> = {
-      about: 'Overview',
-      status: 'Status',
-      checkin: 'Check in',
-      act: 'Act',
-      evidence: 'Evidence',
-      method: 'Method',
-      settings: 'Settings',
-    }
-    document.title = store.state.onboarded || route === 'evidence' || route === 'method' ?`${names[route]} | Tether` : 'Tether'
-  }, [route, store.state.onboarded])
+  const openDemo = () => {
+    store.setState(demoState())
+    go('status')
+  }
 
-  if (!store.state.onboarded && (route === 'evidence' || route === 'method')) {
-    // the analysis and the method are open to read without setting anything up
-    const Page = route === 'evidence' ? Evidence : Method
+  const skip = (
+    <a
+      className="sr-only"
+      href="#main"
+      onClick={(e) => {
+        // a plain #main link would be read as a route by the hash router
+        e.preventDefault()
+        document.getElementById('main')?.focus()
+      }}
+    >
+      Skip to content
+    </a>
+  )
+
+  const toast = toastMsg && (
+    <div className="toast" role="status">
+      {toastMsg}
+    </div>
+  )
+
+  if (SITE.includes(page)) {
     return (
       <Ctx.Provider value={ctx}>
         <div className="limb" />
-        <header className="public-top">
-          <a className="brand" href="#/" style={{ padding: 0 }}>
-            <Logo />
-            Tether
-          </a>
-          <nav className="land-links" aria-label="Project">
-            <a href="#/">Overview</a>
-            <a href="#/evidence" aria-current={route === 'evidence' ? 'page' : undefined}>
-              The data
-            </a>
-            <a href="#/method" aria-current={route === 'method' ? 'page' : undefined}>
-              Method
-            </a>
-          </nav>
-        </header>
-        <main className="main public-main">
-          <Page />
-        </main>
+        {skip}
+        <div className="site">
+          <SiteHeader route={page} isDark={isDark} onToggleTheme={toggle} onboarded={onboarded} onDemo={openDemo} />
+          <main className="site-main" id="main" tabIndex={-1}>
+            {page === 'home' ? (
+              <Home onDemo={openDemo} />
+            ) : (
+              <div className="wrap site-page">{page === 'evidence' ? <Evidence /> : page === 'method' ? <Method /> : <About />}</div>
+            )}
+          </main>
+          <SiteFooter />
+        </div>
+        {toast}
       </Ctx.Provider>
     )
   }
 
-  if (!store.state.onboarded || route === 'about') {
-    return (
-      <Ctx.Provider value={ctx}>
-        <div className="limb" />
-        <Welcome />
-        {toastMsg && <div className="toast" role="status">{toastMsg}</div>}
-      </Ctx.Provider>
-    )
-  }
-
-  const View = { about: Welcome, status: Status, checkin: CheckIn, act: Act, evidence: Evidence, method: Method, settings: Settings }[route]
+  const View = APP_VIEWS[page as keyof typeof APP_VIEWS]
 
   return (
     <Ctx.Provider value={ctx}>
       <div className="limb" />
-      <a
-        className="sr-only"
-        href="#main"
-        onClick={(e) => {
-          // a plain #main link would be read as a route by the hash router
-          e.preventDefault()
-          document.getElementById('main')?.focus()
-        }}
-      >
-        Skip to content
-      </a>
+      {skip}
       <div className="shell">
         <aside className="rail">
-          <a className="brand" href="#/status">
+          <a className="brand" href="#/home">
             <Logo />
             Tether
           </a>
-          <nav className="nav" aria-label="Main">
+          <nav className="nav" aria-label="App">
             {NAV.map(({ id, label, Icon }) => (
-              <a key={id} href={`#/${id}`} aria-current={route === id ? 'page' : undefined}>
+              <a key={id} href={`#/${id}`} aria-current={page === id ? 'page' : undefined}>
                 <Icon />
                 {label}
                 {id === 'act' && actCount > 0 && <span className="badge chip act">{actCount}</span>}
               </a>
             ))}
           </nav>
+          <nav className="nav-sub" aria-label="About the project">
+            <span className="nav-sub-title">About the project</span>
+            <a href="#/home">Overview</a>
+            <a href="#/evidence">The data</a>
+            <a href="#/method">How it works</a>
+          </nav>
           <div className="rail-foot">
-            <a className="small ink2" href="#/about">
-              Project overview
-            </a>
             {store.state.demo && <span className="demo-flag">Demo data, simulated</span>}
             <div className="small ink2">
               {store.state.profile.callsign || 'Crew member'}
@@ -183,7 +195,7 @@ export default function App() {
         </aside>
 
         <header className="topbar">
-          <a className="brand" href="#/status" style={{ padding: 0 }}>
+          <a className="brand" href="#/home" style={{ padding: 0 }}>
             <Logo size={22} />
             Tether
           </a>
@@ -196,13 +208,13 @@ export default function App() {
           </div>
         </header>
 
-        <main className="main" id="main" tabIndex={-1} style={{ outline: 'none' }}>
+        <main className="main" id="main" tabIndex={-1}>
           <View />
         </main>
 
-        <nav className="tabbar" aria-label="Main">
-          {NAV.filter((n) => n.tab).map(({ id, label, Icon }) => (
-            <a key={id} href={`#/${id}`} aria-current={route === id ? 'page' : undefined}>
+        <nav className="tabbar" aria-label="App">
+          {NAV.map(({ id, label, Icon }) => (
+            <a key={id} href={`#/${id}`} aria-current={page === id ? 'page' : undefined}>
               <Icon />
               {label}
               {id === 'act' && actCount > 0 && <span className="dot-badge" />}
@@ -210,11 +222,7 @@ export default function App() {
           ))}
         </nav>
       </div>
-      {toastMsg && (
-        <div className="toast" role="status">
-          {toastMsg}
-        </div>
-      )}
+      {toast}
     </Ctx.Provider>
   )
 }

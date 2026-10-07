@@ -6,7 +6,15 @@ Tether is a daily health self-check for astronauts on long-duration missions. In
 
 It was built for the NASA Space Apps Challenge brief on astronaut health self-monitoring, and its design is grounded in NASA GeneLab study **GLDS-53**, *Spaceflight Modulates Gene Expression in Astronauts*.
 
-Live app: https://mdmusfiqurrahmanakib.github.io/tether/
+**Live site: https://mdmusfiqurrahmanakib.github.io/tether/**
+
+The site opens on a project overview. Choose "Explore the demo" to open the app with a simulated crew member on flight day 46, with nothing to install and no account.
+
+![Overview page](docs/overview.jpg)
+
+| Status, with the baseline ring | The GLDS-53 re-analysis |
+| --- | --- |
+| ![Status screen](docs/status.jpg) | ![Data page](docs/data.jpg) |
 
 ---
 
@@ -75,9 +83,11 @@ src/data/glds53.json      analysis output used by the app
 src/lib/baseline.ts       personal baseline and flag rules
 src/lib/indicators.ts     indicator definitions, units and hard limits
 src/lib/protocols.ts      on-board steps for each indicator
-src/components/           tether ring, sparklines, vigilance test
-src/views/                Status, Check in, Act, Evidence, Method, Settings
+src/components/           tether ring, sparklines, vigilance test, site header and footer
+src/views/                site pages (Home, Evidence, Method, About) and app pages (Status, Check in, Act, Settings)
 ```
+
+The site pages are open to everyone. The app pages need a profile or the demo data, and fall back to the overview without one.
 
 ## Limits
 

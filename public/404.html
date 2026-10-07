@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page not found | Tether</title>
+    <script>
+      // Pages inside Tether are hash routes, so any unknown path goes back to the start page.
+      var home = location.pathname.split('/').slice(0, 2).join('/') + '/'
+      if (location.pathname !== home) location.replace(home)
+    </script>
+    <style>
+      body {
+        font-family: system-ui, sans-serif;
+        margin: 15vh auto;
+        max-width: 32rem;
+        padding: 0 1rem;
+        color: #172033;
+        background: #f3f5f9;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Page not found</h1>
+    <p><a href="./">Go to the Tether start page</a></p>
+  </body>
+</html>

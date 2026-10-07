@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react'
 import { useApp } from '../context'
-import { readAll } from '../lib/baseline'
+import { readAll, type Reading } from '../lib/baseline'
 import { PROTOCOLS } from '../lib/protocols'
 import { fmt } from '../lib/format'
 import { formatDate } from '../lib/store'
@@ -40,39 +40,9 @@ export function Act() {
         </div>
       ) : (
         <div className="act-list">
-          {flagged.map((r) => {
-            const p = PROTOCOLS[r.indicator.id]
-            if (!p) return null
-            return (
-              <article key={r.indicator.id} className={`panel proc ${r.level}`} aria-labelledby={`p-${r.indicator.id}`}>
-                <header className="proc-head">
-                  <span className={`chip ${r.level}`}>{r.level === 'act' ? 'Act' : 'Watch'}</span>
-                  <span className="small ink2">
-                    {r.indicator.label}, <span className="num">{fmt(r.value!, r.indicator)}</span>
-                    {r.median !== undefined && <span className="num">, usually {fmt(r.median, r.indicator)}</span>}
-                  </span>
-                </header>
-                <h2 id={`p-${r.indicator.id}`} className="h3 proc-title">
-                  {p.title}
-                </h2>
-                <p className="xsmall muted">Flagged because: {r.reasons.join('; ')}.</p>
-                <ol className="proc-steps">
-                  {p.steps.map((s, i) => {
-                    const k = `${r.indicator.id}-${i}`
-                    return (
-                      <li key={k}>
-                        <label>
-                          <input type="checkbox" checked={!!done[k]} onChange={(e) => setDone((d) => ({ ...d, [k]: e.target.checked }))} />
-                          <span>{s}</span>
-                        </label>
-                      </li>
-                    )
-                  })}
-                </ol>
-                <p className="proc-escalate small">{p.escalate}</p>
-              </article>
-            )
-          })}
+          {flagged.map((r) => (
+            <ProcCard key={r.indicator.id} r={r} done={done} onToggle={(k, on) => setDone((d) => ({ ...d, [k]: on }))} />
+          ))}
         </div>
       )}
 
@@ -86,5 +56,46 @@ export function Act() {
         </p>
       </aside>
     </div>
+  )
+}
+
+interface ProcProps {
+  r: Reading
+  done: Record<string, boolean>
+  onToggle: (key: string, on: boolean) => void
+}
+
+/** The on-board steps for one flagged indicator. */
+export function ProcCard({ r, done, onToggle }: ProcProps) {
+  const p = PROTOCOLS[r.indicator.id]
+  if (!p) return null
+  return (
+    <article className={`panel proc ${r.level}`} aria-labelledby={`p-${r.indicator.id}`}>
+      <header className="proc-head">
+        <span className={`chip ${r.level}`}>{r.level === 'act' ? 'Act' : 'Watch'}</span>
+        <span className="small ink2">
+          {r.indicator.label}, <span className="num">{fmt(r.value!, r.indicator)}</span>
+          {r.median !== undefined && <span className="num">, usually {fmt(r.median, r.indicator)}</span>}
+        </span>
+      </header>
+      <h2 id={`p-${r.indicator.id}`} className="h3 proc-title">
+        {p.title}
+      </h2>
+      <p className="xsmall muted">Flagged because: {r.reasons.join('; ')}.</p>
+      <ol className="proc-steps">
+        {p.steps.map((s, i) => {
+          const k = `${r.indicator.id}-${i}`
+          return (
+            <li key={k}>
+              <label>
+                <input type="checkbox" checked={!!done[k]} onChange={(e) => onToggle(k, e.target.checked)} />
+                <span>{s}</span>
+              </label>
+            </li>
+          )
+        })}
+      </ol>
+      <p className="proc-escalate small">{p.escalate}</p>
+    </article>
   )
 }

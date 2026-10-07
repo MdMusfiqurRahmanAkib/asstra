@@ -1,4 +1,4 @@
-import type { SVGProps } from 'react'
+import { useId, type SVGProps } from 'react'
 
 type P = SVGProps<SVGSVGElement>
 
@@ -78,20 +78,40 @@ export const IconTimer = (p: P) => (
 )
 
 export function Logo({ size = 26 }: { size?: number }) {
+  // each logo needs its own gradient: one inside a hidden parent cannot be shared
+  const id = `limb${useId().replace(/:/g, '')}`
   return (
     <svg width={size} height={size} viewBox="0 0 32 32" aria-hidden="true">
       <defs>
-        <linearGradient id="logo-limb" x1="0" y1="1" x2="1" y2="0">
+        <linearGradient id={id} x1="0" y1="1" x2="1" y2="0">
           <stop offset="0" stopColor="var(--limb-1)" />
           <stop offset="0.45" stopColor="var(--limb-2)" />
           <stop offset="0.75" stopColor="var(--limb-3)" />
           <stop offset="1" stopColor="var(--limb-4)" />
         </linearGradient>
       </defs>
-      <circle cx="16" cy="16" r="11" fill="none" stroke="url(#logo-limb)" strokeWidth="3.2" />
+      <circle cx="16" cy="16" r="11" fill="none" stroke={`url(#${id})`} strokeWidth="3.2" />
       <path d="M16 16 L25.5 6.5" stroke="var(--ink)" strokeWidth="1.6" strokeLinecap="round" strokeDasharray="1 3" />
       <circle cx="16" cy="16" r="2.6" fill="var(--ink)" />
       <circle cx="27" cy="5" r="2.6" fill="var(--ink)" />
     </svg>
   )
 }
+
+export const IconMenu = (p: P) => (
+  <svg {...base} {...p}>
+    <path d="M3 5.5h14M3 10h14M3 14.5h14" />
+  </svg>
+)
+
+export const IconClose = (p: P) => (
+  <svg {...base} {...p}>
+    <path d="M4.5 4.5l11 11M15.5 4.5l-11 11" />
+  </svg>
+)
+
+export const IconCheck = (p: P) => (
+  <svg {...base} {...p}>
+    <path d="M4 10.5l4 4 8-9" />
+  </svg>
+)

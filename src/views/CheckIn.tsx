@@ -171,7 +171,7 @@ export function CheckIn() {
   )
 }
 
-function IndicatorField({ ind, value, usual, onChange }: { ind: Indicator; value: string; usual?: number; onChange: (v: string) => void }) {
+export function IndicatorField({ ind, value, usual, onChange }: { ind: Indicator; value: string; usual?: number; onChange: (v: string) => void }) {
   const id = `f-${ind.id}`
   const hint = usual !== undefined && ind.kind !== 'flag' ? `${ind.help} Usually ${fmt(usual, ind)}.` : ind.help
 
