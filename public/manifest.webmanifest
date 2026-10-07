@@ -1,0 +1,10 @@
+{
+  "name": "Tether",
+  "short_name": "Tether",
+  "description": "Daily health self-check for long-duration spaceflight crews.",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#f3f5f9",
+  "theme_color": "#24307f",
+  "icons": [{ "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}

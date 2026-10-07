@@ -1,0 +1,114 @@
+ONTOLOGY SOURCE REFERENCE
+Term Source Name	SNOMEDCT	NCBITAXON	EFO	UO	MESH	MESH	NCIT	MS	OBI
+Term Source File	https://data.bioontology.org/ontologies/SNOMEDCT	https://data.bioontology.org/ontologies/NCBITAXON	http://data.bioontology.org/ontologies/EFO	https://data.bioontology.org/ontologies/UO	https://data.bioontology.org/ontologies/MESH	http://data.bioontology.org/ontologies/MESH	https://data.bioontology.org/ontologies/NCIT	https://data.bioontology.org/ontologies/MS	
+Term Source Version	22	17	111	214	21	5	101	162	44
+Term Source Description	SNOMED CT	National Center for Biotechnology Information (NCBI) Organismal Classification	Experimental Factor Ontology	Units of Measurement Ontology	Medical Subject Headings	Medical Subject Headings	National Cancer Institute Thesaurus	Mass Spectrometry Ontology	Ontology for Biomedical Investigations
+INVESTIGATION
+Investigation Identifier	
+Investigation Title	
+Investigation Description	
+Investigation Submission Date	
+Investigation Public Release Date	
+INVESTIGATION PUBLICATIONS
+Investigation PubMed ID
+Investigation Publication DOI
+Investigation Publication Author List
+Investigation Publication Title
+Investigation Publication Status
+Investigation Publication Status Term Accession Number
+Investigation Publication Status Term Source REF
+INVESTIGATION CONTACTS
+Investigation Person Last Name
+Investigation Person First Name
+Investigation Person Mid Initials
+Investigation Person Email
+Investigation Person Phone
+Investigation Person Fax
+Investigation Person Address
+Investigation Person Affiliation
+Investigation Person Roles
+Investigation Person Roles Term Accession Number
+Investigation Person Roles Term Source REF
+STUDY
+Study Identifier	OSD-53
+Study Title	Spaceflight Modulates Gene Expression in Astronauts
+Study Description	Astronauts are exposed to a unique combination of stressors during spaceflight, which leads to alterations in their physiology and potentially increases their susceptibility to infectious pathogens. Here we report the first microarray evaluation of any astronaut tissue sample, specifically whole blood, before and after spaceflight using an array comprising 234 well-characterized stress response genes. Differentially regulated genes included those important for DNA repair, oxidative stress, and protein folding/degradation. Microarrays comprising 234 well characterized stress-related genes were used to profile transcriptomic changes in six astronauts before and after short-duration spaceflight. Blood samples were collected for analysis from each eastronaut 10 days prior and 2-3 hours after return from spaceflight. Data submitted for platform GPL140 contain genes that have been pre-filtered by the analytical software to remove values of low certainty, resulting in missing values for some samples. Unfortunately, these original data are no longer available due to physical damage at Tulane University during hurricane Katrina, but the processed values were retained in redundant locations and these are submitted for upload to GEO.
+Study Submission Date	21-May-2013
+Study Public Release Date	15-Oct-2013
+Study File Name	s_OSD-53.txt
+Comment[Acknowledgments]	We thank the NASA astronauts who so generously participated in these flight studies. We apologize to any authors whose work could not be cited due to space limitations. We also thank Andrea Throop for helpful discussions during the writing of this manuscript.
+Comment[DOI]	10.25966/qsf7-cr81
+Comment[Data Source Accession]	E-GEOD-47126
+Comment[Data Source Link]	http://www.ebi.ac.uk/arrayexpress/experiments/E-GEOD-47126/
+Comment[Experiment Platform]	
+Comment[Flight Program]	
+Comment[Funding]	This work was funded by USRA Sponsor Award 09930-286-01 (017991-001).
+Comment[Identifiers]	
+Comment[Managing NASA Center]	
+Comment[Mission End]	
+Comment[Mission Link]	
+Comment[Mission Name]	
+Comment[Mission Start]	
+Comment[Project Identifier]	
+Comment[Project Link]	
+Comment[Project Title]	
+Comment[Project Type]	Spaceflight Study
+Comment[Space Program]	NASA
+Comment[Study Grant Number]	
+STUDY DESIGN DESCRIPTORS
+Study Design Type	transcription profiling by array
+Study Design Type Term Accession Number	http://www.ebi.ac.uk/efo/EFO_0002768
+Study Design Type Term Source REF	EFO
+STUDY PUBLICATIONS
+Study PubMed ID	28725744
+Study Publication DOI	10.1038/npjmgrav.2016.39
+Study Publication Author List	Jennifer Barrila, C Mark Ott, Carly LeBlanc, Satish K Mehta, Aurélie Crabbe, Phillip Stafford, Duane L Pierson, Cheryl A Nickerson
+Study Publication Title	Spaceflight modulates gene expression in the whole blood of astronauts
+Study Publication Status	published
+Study Publication Status Term Accession Number	http://www.ebi.ac.uk/efo/EFO_0001796
+Study Publication Status Term Source REF	EFO
+Comment[Study Publication Link]	https://www.nature.com/articles/npjmgrav201639
+STUDY FACTORS
+Study Factor Name	Spaceflight	Sex	Time
+Study Factor Type	Space Flight	sex	time
+Study Factor Type Term Accession Number	http://purl.bioontology.org/ontology/MESH/D013026	http://purl.obolibrary.org/obo/PATO_0000047	http://www.ebi.ac.uk/efo/EFO_0000721
+Study Factor Type Term Source REF	MESH	EFO	EFO
+STUDY ASSAYS
+Study Assay File Name	a_OSD-53_transcription-profiling_dna-microarray_bd biosciences clontech.txt
+Study Assay Measurement Type	transcription profiling
+Study Assay Measurement Type Term Accession Number	obo:OBI_0000424
+Study Assay Measurement Type Term Source REF	OBI
+Study Assay Technology Type	DNA microarray
+Study Assay Technology Type Term Accession Number	obo:OBI_0400147
+Study Assay Technology Type Term Source REF	OBI
+Study Assay Technology Platform	BD Biosciences Clontech
+STUDY PROTOCOLS
+Study Protocol Name	P-GSE47126-3	P-GSE47126-5	P-GSE47126-6	library construction	P-GSE47126-7	P-GSE47126-8	P-GSE47126-1
+Study Protocol Type	P-GSE47126-3	nucleic acid extraction protocol	labelling protocol	library construction	hybridization protocol	array scanning protocol	normalization data transformation protocol
+Study Protocol Type Term Accession Number							
+Study Protocol Type Term Source REF							
+Study Protocol Description	Permission to collect blood from National Aeronautics and Space Administration (NASA) astronauts was obtained from the Johnson Space Center Committee for the Protection of Human Subjects. Consenting astronauts from several shuttle missions provided whole blood samples 10 days prior to shuttle launch (L-10) and several hours after return to earth (R+0). Whole blood was collected into a Vacutainer Blood collection tubes and then transferred into PAXgene tubes (PreAnalytiX, Hombrechtikon, CH), according to the manufacturer's instructions.	Total RNA was isolated from whole blood samples using the PAXgene Blood RNA Kit (PreAnalytiX, Hombrechtikon, CH), according to the manufacturer's instructions. Duplicate RNA samples were combined and DNase treated using a DNA-free kit (Ambion). RNA was quantitated by ultraviolet absorbance, concentrated by ethanol precipitation and re-suspended in deionized water (BD Biosciences Clontech) to yield a 4 ug sample of RNA for each astronaut at L-10 and R+0. RNA integrity was confirmed using denaturing Formaldehyde-Agarose gel electrophoresis.	Total RNA was converted to 32P-labeled first-strand cDNA by reverse transcription. Reaction volumes were optimized for increased detection on the arrays as follows: 4 ug of total RNA was combined with 2 ul gene-specific CDS primer mix (BD Biosciences Clontech). A master mix was prepared at room temperature including 4 ul 5X Reaction Buffer, 2 ul 10X dNTP Mix (for dATP label), 5 ul [alpha-32P]dATP (10uCi/ul), and 1 ul 100mM DTT. Two microliters of MMLV Reverse Transcriptase was added to the master mix, and was combined with the RNA, primer mix. All incubations were performed according to the manufacturer's instructions. Labeled probes were purified using column chromatography (BD Biosciences Clontech).		Radioactive cDNA probes were hybridized to the microarrays at 68C overnight in ExpressHyb solution (BD Biosciences Clontech) and washed according to the manufacturer's instructions.	Arrays were exposed to a phosphoimager screen at room temperature for 3 days.	"For Flight samples: Arrays were analyzed using Atlas Image 2.0 software (Clontech Laboratories, Inc., Palo Alto, CA), according to the manufacturer's instructions. Arrays were normalized to the following housekeeping genes: ubiquitin C (UBC), liver glyceraldehyde 3-phosphate dehydrogenase (GAPDH), tubulin alpha 1 (TUBA1), and major histocompatability complex class I C (HLAC). After background subtraction for each array, the ratio of the post-flight adjusted intensity values (R+0) to the pre-flight adjusted intensity values (L-10) was calculated. Only genes with at least four data points pre-flight and post-flight were taken into consideration for data analysis. ID_REF equals  VALUE equals Background subtracted intensity and gene based normalization.  See Barrila et al. (2013) for details.
+
+For Control (non-astronaut) sample: Arrays were analyzed using Atlas Image 2.0 software (Clontech Laboratories, Inc., Palo Alto, CA), according to the manufacturer's instructions. All astronaut arrays (L-10 and R+0) were normalized to an average of 5 control arrays from the whole blood of healthy non-astronaut control subjects. Arrays were normalized using the following housekeeping genes: ubiquitin C (UBC), liver glyceraldehyde 3-phosphate dehydrogenase (GAPDH), tubulin alpha 1 (TUBA1), and major histocompatability complex class I C (HLAC). After background subtraction for each array, the ratio of the post-flight adjusted intensity values (R+0) to the pre-flight adjusted intensity values (L-10) was calculated. Only genes for astronauts with at least four data points pre-flight and post-flight were taken into consideration for data analysis. ID_REF equals VALUE equals Background subtracted intensity and gene based normalization. See Barrila et al. (2013) for details"
+Study Protocol URI							
+Study Protocol Version							
+Study Protocol Parameters Name	duration						
+Study Protocol Parameters Name Term Accession Number	http://www.ebi.ac.uk/efo/EFO_0000433						
+Study Protocol Parameters Name Term Source REF	EFO						
+Study Protocol Components Name							
+Study Protocol Components Type							
+Study Protocol Components Type Term Accession Number							
+Study Protocol Components Type Term Source REF							
+STUDY CONTACTS
+Study Person Last Name	Barrila	Ott	LeBlanc	Mehta	Stafford	Pierson	Nickerson
+Study Person First Name	Jennifer	C Mark	Carly	Satish	Phillip	Duane	Cheryl
+Study Person Mid Initials				K			A
+Study Person Email	Jennifer.Barrila@asu.edu						
+Study Person Phone	480-727-9282						
+Study Person Fax							
+Study Person Address	Center for Infectious Diseases and Vaccinology, The Biodesign Institute, Arizona State University, 1001 S McAllister Ave, Tempe, AZ, USA						
+Study Person Affiliation	The Biodesign Institute, Arizona State University						The Biodesign Institute, Arizona State University
+Study Person Roles	submitter	co-author	co-author	co-author	co-author	co-author	principal investigator
+Study Person Roles Term Accession Number	http://www.ebi.ac.uk/efo/EFO_0001741	http://purl.obolibrary.org/obo/MS_1002036	http://purl.obolibrary.org/obo/MS_1002036	http://purl.obolibrary.org/obo/MS_1002036	http://purl.obolibrary.org/obo/MS_1002036	http://purl.obolibrary.org/obo/MS_1002036	http://www.ebi.ac.uk/efo/EFO_0009736
+Study Person Roles Term Source REF	EFO	MS	MS	MS	MS	MS	EFO
+Comment[Study Person REF]							

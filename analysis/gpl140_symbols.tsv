@@ -1,0 +1,244 @@
+id	symbol	group
+C277	FOS	Stress signalling
+421	ATF2	Stress signalling
+427	CREB1	Stress signalling
+766	MAPK3	Stress signalling
+727	MAPK1	Stress signalling
+769	MAPK6	Stress signalling
+C195	MAPK4	Stress signalling
+C172	MAPK7	Stress signalling
+C207	MAPK12	Stress signalling
+704	MAPK14	Stress signalling
+C179	MAPK11	Stress signalling
+702	MAPK8	Stress signalling
+779	MAPK9	Stress signalling
+791	MAPK10	Stress signalling
+C315	MAP2K5	Stress signalling
+335	MAP2K1	Stress signalling
+C286	MAP2K2	Stress signalling
+849	MAP2K6	Stress signalling
+C250	MAP3K3	Stress signalling
+S14	STK25	Stress signalling
+S99	MAP4K5	Stress signalling
+S114	MAP4K2	Stress signalling
+S98	MAP4K1	Stress signalling
+S1	SOCS7	Stress signalling
+S74	NCK1	Stress signalling
+C171	PAK2	Stress signalling
+C154	CDC42	Stress signalling
+S53	TRAP1	Protein folding and degradation
+S54	PSMD2	Protein folding and degradation
+C88	NME1	Stress signalling
+152	HSF1	Protein folding and degradation
+S40	HSF2	Protein folding and degradation
+S17	HSF4	Protein folding and degradation
+C18	MTOR	Stress signalling
+S117	EIF2AK2	Stress signalling
+S118	HSPE1	Protein folding and degradation
+S16	HSPH1	Protein folding and degradation
+761	HSPB1	Protein folding and degradation
+S80	SERPINH1	Protein folding and degradation
+817	HSPA1A	Protein folding and degradation
+S123	HSPA2	Protein folding and degradation
+S28	HSPA4	Protein folding and degradation
+S121	HSPA6	Protein folding and degradation
+S122	HSPA8	Protein folding and degradation
+755	HSP90AA1	Protein folding and degradation
+S120	HSP90AB1	Protein folding and degradation
+S119	HSPB3	Protein folding and degradation
+S46	HSPB2	Protein folding and degradation
+S96	DNAJB4	Protein folding and degradation
+S30	HSPA9	Protein folding and degradation
+S58	ST13	Protein folding and degradation
+S2	DNAJA1	Protein folding and degradation
+695	DNAJB1	Protein folding and degradation
+S103	HSPA5	Protein folding and degradation
+S26	CANX	Protein folding and degradation
+S43	CALR	Protein folding and degradation
+S21	PDIA4	Protein folding and degradation
+S31	PTGES3	Protein folding and degradation
+S44	STIP1	Protein folding and degradation
+S27	PPID	Protein folding and degradation
+S65	GLMN	Protein folding and degradation
+S97	FKBP5	Protein folding and degradation
+S37	FKBP1A	Protein folding and degradation
+S95	FKBP4	Protein folding and degradation
+S39	FKBP2	Protein folding and degradation
+763	VIM	Other
+717	HSPD1	Protein folding and degradation
+C259	BAG1	Protein folding and degradation
+S9	NEDD8	Protein folding and degradation
+S77	TCP1	Protein folding and degradation
+S59	CCT4	Protein folding and degradation
+S11	CCT5	Protein folding and degradation
+S82	CCT3	Protein folding and degradation
+S67	CCT7	Protein folding and degradation
+S3	CCT8	Protein folding and degradation
+S70	HMOX1	Oxidative stress
+S8	HMOX2	Oxidative stress
+S72	HSP90B1	Protein folding and degradation
+S47	CRYAA	Protein folding and degradation
+S45	CRYAB	Protein folding and degradation
+S109	CRYBA4	Other
+S111	CRYBB1	Other
+S112	CRYBB2	Other
+S113	CRYBB3	Other
+S160	CRYGC	Other
+S23	CRYM	Other
+S29	CRYZ	Oxidative stress
+S5	PDIA3	Protein folding and degradation
+S12	PDIA6	Protein folding and degradation
+S145	ETF1	Other
+S13	PDIA5	Protein folding and degradation
+S147	SSRP1	DNA repair and replication
+S63	HYOU1	Protein folding and degradation
+871	DNASE1L1	Other
+374	RRAD	Stress signalling
+635	PURA	Other
+640	MGMT	DNA repair and replication
+541	CDKN1A	Stress signalling
+S33	FEN1	DNA repair and replication
+S64	FANCG	DNA repair and replication
+661	SOD1	Oxidative stress
+S19	SOD3	Oxidative stress
+S71	SOD2	Oxidative stress
+38	TP53	Stress signalling
+14	MDM2	Stress signalling
+845	ATM	DNA repair and replication
+637	TOP1	DNA repair and replication
+638	TOP2A	DNA repair and replication
+S100	TOP2B	DNA repair and replication
+S61	TOP3A	DNA repair and replication
+S68	CAT	Oxidative stress
+S75	TYRP1	Other
+S73	UNG	DNA repair and replication
+S76	CCNO	DNA repair and replication
+S41	MPG	DNA repair and replication
+S62	TDG	DNA repair and replication
+S86	OGG1	DNA repair and replication
+S108	MUTYH	DNA repair and replication
+S79	APEX1	DNA repair and replication
+S66	NTHL1	DNA repair and replication
+S38	LIG1	DNA repair and replication
+870	LIG3	DNA repair and replication
+S35	PARP1	DNA repair and replication
+S6	NUDT1	Oxidative stress
+432	XRCC1	DNA repair and replication
+S10	POLB	DNA repair and replication
+S34	DNTT	DNA repair and replication
+S78	RPS3	DNA repair and replication
+S4	XPA	DNA repair and replication
+422	ERCC3	DNA repair and replication
+S7	XPC	DNA repair and replication
+668	RAD23A	DNA repair and replication
+667	RAD23B	DNA repair and replication
+642	ERCC2	DNA repair and replication
+S55	DDB1	DNA repair and replication
+S56	DDB2	DNA repair and replication
+S102	ERCC4	DNA repair and replication
+365	ERCC5	DNA repair and replication
+S57	ERCC8	DNA repair and replication
+334	ERCC6	DNA repair and replication
+84	GTF2H1	DNA repair and replication
+132	GTF2H2	DNA repair and replication
+S88	GTF2H3	DNA repair and replication
+S84	GTF2H4	DNA repair and replication
+649	ERCC1	DNA repair and replication
+460	RPA1	DNA repair and replication
+S22	RPA2	DNA repair and replication
+S25	RPA3	DNA repair and replication
+S107	RPA4	DNA repair and replication
+C22	PCNA	DNA repair and replication
+341	RFC5	DNA repair and replication
+492	RFC4	DNA repair and replication
+342	RFC3	DNA repair and replication
+491	RFC2	DNA repair and replication
+151	RFC1	DNA repair and replication
+567	POLA1	DNA repair and replication
+S42	POLD1	DNA repair and replication
+719	GADD45A	Stress signalling
+732	DDIT3	Stress signalling
+864	RAD50	DNA repair and replication
+308	RAD51	DNA repair and replication
+830	RAD52	DNA repair and replication
+S52	ATRX	DNA repair and replication
+S83	RAD54L	DNA repair and replication
+748	BRCA2	DNA repair and replication
+S15	DMC1	DNA repair and replication
+869	LIG4	DNA repair and replication
+468	UBE2A	Protein folding and degradation
+S93	UBE2B	Protein folding and degradation
+S85	XRCC2	DNA repair and replication
+S60	XRCC4	DNA repair and replication
+424	XRCC6	DNA repair and replication
+417	XRCC5	DNA repair and replication
+745	PRKDC	DNA repair and replication
+S36	RAG1	DNA repair and replication
+S104	RAG2	DNA repair and replication
+662	MLH1	DNA repair and replication
+C54	MSH2	DNA repair and replication
+S20	MSH3	DNA repair and replication
+C77	MSH6	DNA repair and replication
+S106	PMS2	DNA repair and replication
+S105	PMS1	DNA repair and replication
+S151	NAT2	Drug and toxin metabolism
+S87	CYP1A2	Drug and toxin metabolism
+S18	CYP4B1	Drug and toxin metabolism
+S115	CYP2A6	Drug and toxin metabolism
+S116	CYP2C9	Drug and toxin metabolism
+S51	DPYD	Drug and toxin metabolism
+S92	FMO1	Drug and toxin metabolism
+S101	FMO4	Drug and toxin metabolism
+S89	FMO5	Drug and toxin metabolism
+S69	HMBS	Other
+S91	ABCB4	Drug and toxin metabolism
+S24	ABCC1	Drug and toxin metabolism
+S48	NNMT	Drug and toxin metabolism
+S50	SULT1A1	Drug and toxin metabolism
+S49	UGT2B15	Drug and toxin metabolism
+S142	MAOA	Drug and toxin metabolism
+S143	MAOB	Drug and toxin metabolism
+S128	CYP1A1	Drug and toxin metabolism
+S136	CYP2D6	Drug and toxin metabolism
+S124	CYP2E1	Drug and toxin metabolism
+S125	CYP2F1	Drug and toxin metabolism
+S135	CYP11A1	Drug and toxin metabolism
+S153	CYP11B1	Drug and toxin metabolism
+S134	CYP21A2	Drug and toxin metabolism
+S131	CES1	Drug and toxin metabolism
+S127	GSTM3	Oxidative stress
+645	GSR	Oxidative stress
+648	MGST1	Oxidative stress
+651	GSTM4	Oxidative stress
+652	GSTP1	Oxidative stress
+653	GSTA2	Oxidative stress
+658	GPX1	Oxidative stress
+671	GSTT1	Oxidative stress
+C370	GSTO1	Oxidative stress
+S130	EPHX2	Drug and toxin metabolism
+S138	UGT1A1	Drug and toxin metabolism
+S148	UGT1A2P	Drug and toxin metabolism
+S146	UGT1A3	Drug and toxin metabolism
+S139	UGT1A4	Drug and toxin metabolism
+S126	UGT1A6	Drug and toxin metabolism
+S154	CYP4A11	Drug and toxin metabolism
+S156	BLMH	Drug and toxin metabolism
+S141	COMT	Drug and toxin metabolism
+S158	CPOX	Other
+S157	CYB5R3	Oxidative stress
+S150	ACADSB	Other
+S152	GPX2	Oxidative stress
+S140	PON1	Oxidative stress
+S132	PON2	Oxidative stress
+S133	PON3	Oxidative stress
+S149	TPMT	Drug and toxin metabolism
+S129	PPARA	Stress signalling
+905	UBC	Reference
+906	YWHAZ	Reference
+907	HPRT1	Reference
+16	GAPDH	Reference
+901	TUBA1B	Reference
+902	HLA-C	Reference
+49	ACTB	Reference
+903	RPL13A	Reference
+904	RPS9	Reference

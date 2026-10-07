@@ -1,0 +1,256 @@
+#ID = unique reference number used by BD Biosciences Clontech to identify each gene in collection
+#GENE_NAME = set of names commonly used for the gene, based on the current literature
+#COORDINATE = array coordinate
+#GB_LIST = GenBank accession number
+#SP_LIST = SwissProt accession number
+#GENE = Entrez GENE ID
+#DESC = description
+#CLASSIFICATION = set of functional classifications for the gene
+ID	GENE_NAME	COORDINATE	GB_LIST	SP_LIST	GENE	DESC	CLASSIFICATION
+S33	FLAP endonuclease 1 (FEN1); maturation factor 1 (MF1) 	10B	L37374	P39748	2237	flap structure-specific endonuclease 1	FY02 SN00
+S64	X-ray repair-complementing defective repair in Chinese hamster cells 9 (XRCC9)	10C	U70310	O15287	2189	Fanconi anemia, complementation group G	FY02 SN00
+661	cytosolic superoxide dismutase 1 (SOD1)	10D	K00065, X02317	P00441		cytosolic superoxide dismutase 1 (SOD1)	FH03 SC00
+S19	copper-zinc-containing superoxide dismutase 3 (Cu-Zn SOD3); extracellular SOD (ECSOD)	10E	J02947	P08294	6649	superoxide dismutase 3, extracellular	FH03 FL09 SF00
+S71	Mn+ superoxide dismutase 2 (SOD2)	10F	X07834, X59445	P04179, P78434, Q16792	6648	superoxide dismutase 2, mitochondrial	FH03 SM00
+38	p53 cellular tumor antigen	10G	M14694, M14695	P04637	7157	tumor protein p53 (Li-Fraumeni syndrome)	FG00 FT00 FO00 SN00
+14	p53-binding mouse double minute 2 homolog (MDM2)	10H	Z12020, M92424	Q00987, Q13226	4193	mouse double minute 2, human homolog of; p53-binding protein	FG00 FT00 FO00 FC00 SN00
+845	ataxia telangiectasia mutated protein (ATM)	10I	U33841	Q13315	472	ataxia telangiectasia mutated (includes complementation groups A, C and D)	FY02 FC02 FY03 FH00 SN00
+637	DNA topoisomerase I (TOP1)	10J	J03250	P11387	7150	topoisomerase (DNA) I	FY01 SN00
+638	DNA topoisomerase II alpha (TOP2A)	10K	J04088	P11388	7153	topoisomerase (DNA) II alpha (170kD)	FY01 SN00
+S100	DNA topoisomerase II beta (TOP2B)	10L	X68060	Q02880	7155	topoisomerase (DNA) II beta (180kD)	FY01 SN00
+S61	DNA topoisomerase III alpha (TOP3A)	10M	U43431	Q13472, Q13473	7156	topoisomerase (DNA) III alpha	FY01 SN00
+S68	catalase (CAT)	10N	X04076	P04040	847	catalase	FH01 FL09 SP00
+S75	5,6-dihydroxyindole-2-carboxylic acid oxidase (DHICA oxidase); tyrosinase-related protein 1 (TRP-1); catalase B; glycoprotein-75 (GP75)	10O	X51420	P17643	7306	tyrosinase-related protein 1	FL09 SC00
+S73	uracil-DNA glycosylase (UNG1)	11B	X15653	P13051	7374	uracil-DNA glycosylase	FY02 FH00 SN00 SM00
+S76	uracil-DNA glycosylase 2 (UNG2)	11C	X52486	P22674	10309	uracil-DNA glycosylase 2	FY02 SN00
+S41	DNA-3-methyladenine glycosylase (ADPG); 3-alkyladenine DNA glycosylase; N-methylpurine-DNA glycosirase (MPG)	11D	M74905	P29372	4350	N-methylpurine-DNA glycosylase	FY02 FY04 SN00
+S62	G/T mismatch-specific thymine DNA glycosylase (TDG)	11E	U51166	Q13569	6996	thymine-DNA glycosylase	FY02 SN00
+S86	8-oxyguanine DNA glycosylase 1 (OGG1); mutM homolog (MMH)	11F	Y11838	O15527, O00390, P78554, O00670, O00705, O14876	4968	8-oxoguanine DNA glycosylase	FY02 SN00
+S108	mutY homolog  (hMYH) 	11G	U63329	Q15830	4595	mutY (E. coli) homolog	FY02 SN00
+S79	DNA-(apurinic or apyrimidinic site) lyase; AP endonuclease 1 (APE1); apurinic/apyrimidinic endonuclease (APEX); APEX nuclease (APEN); REF1	11H	X59764, X66133	P27695, Q99775		DNA-(apurinic or apyrimidinic site) lyase; AP endonuclease 1 (APE1); apurinic/apyrimidinic endonuclease (APEX); APEX nuclease (APEN); REF1	FY02 FH00 SN00
+S66	endonuclease III homolog 1; HNTH1; OCTS3	11I	U79718	Q99794	4913	nth (E.coli endonuclease III)-like 1	FY02 SN00
+S38	ATP-dependent DNA ligase I (LIG1); polydeoxyribonucleotide synthase	11J	M36067	P18858	3978	ligase I, DNA, ATP-dependent	FY02 FY01 FH00 SN00
+870	DNA ligase III (LIG3); polydeoxyribonucleotide synthase	11K	X84740	P49916	3980	ligase III, DNA, ATP-dependent	FY02 FY01 FH00 SN00
+S35	poly(ADP-ribose) polymerase (PARP; ADPRT; ADPRP; PPOL); NAD(+) ADP-ribosyltransferase; poly(ADP-ribose) synthetase	11L	M18112, J03473	P09874	142	ADP-ribosyltransferase (NAD+; poly (ADP-ribose) polymerase)	FO10 FY00 SN00
+S6	7,8-dihydro-8-oxoguanine triphosphatase (8-oxo-dGTPase); mutT homolog 1  (MTH1)	11M	D16581	P36639	4521	nudix (nucleoside diphosphate linked moiety X)-type motif 1	FH03 FL09 SC00
+432	X-ray repair-complementing defective repair in Chinese hamster cells 1 (XRCC1)	11N	M36089	P18887	7515	X-ray repair complementing defective repair in Chinese hamster cells 1	FY02 FH00 SN00
+S10	DNA polymerase beta (POLB)	11O	D29013	P06746	5423	polymerase (DNA directed), beta	FY02 FY01 SN00
+S34	DNA nucleotidylexotransferase; terminal addition enzyme; terminal deoxynucleotidyltransferase (DNTT; TDT)	12B	M11722, K01919	P04053	1791	deoxynucleotidyltransferase, terminal	FY01 SN00
+S78	40S ribosomal protein S3 (RPS3)	12C	X55715	P23396	6188	ribosomal protein S3	FN01 SC00 SN00
+S4	xeroderma pigmentosum group A complementing protein (XPA)	12D	D14533	P23025	7507	xeroderma pigmentosum, complementation group A	FY02 FH00 SN00
+422	xeroderma pigmentosum group B complementing protein (XPB); excision repair cross-complementing rodent repair deficiency complementation group 3 (ERCC3); basal transcription factor 2 89-kDa subunit (BTF2p89; TFIIH 89-kDa subunit)	12E	M31899	P19447	2071	excision repair cross-complementing rodent repair deficiency, complementation group 3 (xeroderma pigmentosum group B complementing)	FY02 FH00 SN00
+S7	xeroderma pigmentosum group C complementing protein (XPC)	12F	D21089	Q01831	7508	xeroderma pigmentosum, complementation group C	FY02 FH00 SN00
+668	UV excision repair protein RAD23 homolog A (RAD23A; hHR23A)	12G	D21235	P54725	5886	RAD23 (S. cerevisiae) homolog A	FY02 FH00 SN00
+667	UV excision repair protein RAD23 homolog B (hHR23B); xeroderma pigmentosum group C repair-complementing complex 58-kDa protein (XPC repair-complementing complex 58-kDa protein)	12H	D21090	P54727	5887	RAD23 (S. cerevisiae) homolog B	FY02 FH00 SN00
+642	xeroderma pigmentosum group D complementing protein (XPD); X-ray repair-complementing defective repair in Chinese hamster cells 2 (XRCC2)	12I	X52221	P18074	2068	excision repair cross-complementing rodent repair deficiency, complementation group 2 (xeroderma pigmentosum D)	FY02 FH00 SN00
+S55	damage-specific DNA-binding protein p127 subunit (DDBA p127); DDB1	12J	U18299	Q16531	1642	damage-specific DNA binding protein 1 (127kD)	FY02 SN00
+S56	damage-specific DNA binding protein p48 subunit (DDBB P48); implicated in xeroderma pigmentosum group E (DDB2)	12K	U18300	Q92466	1643	damage-specific DNA binding protein 2 (48kD)	FY02 SN00
+S102	xeroderma pigmentosum group F complementing protein (XPF); excision repair cross-complementing rodent repair deficiency complementation group 4 (ERCC4); ERCC11	12L	L77890	Q92889, O00140	2072	excision repair cross-complementing rodent repair deficiency, complementation group 4	FY02 SN00
+365	xeroderma pigmentosum group G complementing protein (XPG); X-ray repair-complementing defective repair in Chinese hamster cells 5 (XRCC5)	12M	L20046, X69978	P28715	2073	excision repair cross-complementing rodent repair deficiency, complementation group 5 (xeroderma pigmentosum, complementation group G (Cockayne syndrome))	FY02 FH00 SN00
+S57	cockayne syndrome group A; WD-repeat protein (CSA protein)	12N	U28413	Q13216	1161	Cockayne syndrome 1 (classical)	FB03 SN00
+334	excision repair cross-complementing rodent repair deficiency complementation group 6 (ERCC6); Cockayne syndrome protein 2 type B (CSB)	12O	L04791	Q03468	2074	excision repair cross-complementing rodent repair deficiency, complementation group 6	FY02 FH00 SN00
+84	basic transcription factor 62-kDa subunit (BTF2)	14B	M95809	P32780	2965	general transcription factor IIH, polypeptide 1 (62kD subunit)	FB02 SN00
+132	basic transcription factor 2 44-kDa subunit (BTF2p44)	14C	Z30094	Q13888	2966	general transcription factor IIH, polypeptide 2 (44kD subunit)	FB02 SN00
+S88	basic transcription factor 2 34-kDa subunit (BTF2p34)	14D	Z30093	Q13889	2967	general transcription factor IIH, polypeptide 3 (34kD subunit)	FB02 SN00
+S84	transcription factor IIH (TFIIH); 52-kDa basic transcription factor 2 subunit (BTF2p52)	14E	Y07595	Q92759	2968	general transcription factor IIH, polypeptide 4 (52kD subunit)	FB02 SN00
+649	excision repair cross-complementing rodent repair deficiency complementation group 1 (ERCC1)	14F	M13194	P07992	2067	excision repair cross-complementing rodent repair deficiency, complementation group 1 (includes overlapping antisense sequence)	FY02 FH00 SN00
+460	replication protein A 70-kDa subunit (RPA70; REPA1; RF-A); single-stranded DNA-binding protein	14G	M63488	P27694	6117	replication protein A1 (70kD)	FY01 SN00
+S22	replication protein A 32-kDa subunit (RPA32); replication factor A protein 2 (RFA; RPA2)	14H	J05249	P15927	6118	replication protein A2 (32kD)	FY01 SN00
+S25	replication protein A 14-kDa subunit (RP-A) (RF-A); replication factor A protein 3	14I	L07493	P35244	6119	replication protein A3 (14kD)	FY01 FC00 SN00
+S107	replication protein A 30-kDa subunit; replication factor A protein 4 (RPA4; RFA)	14J	U24186	Q13156	29935	replication protein A complex 34 kd subunit homolog Rpa4	FY01 SN00
+C22	proliferating cyclic nuclear antigen (PCNA); cyclin	14K	M15796, J04718	P12004	5111	proliferating cell nuclear antigen	FY01 SN00
+341	replication factor C 36-kDa subunit (RFC36); activator 1 36-kDa subunit	15B	L07540	P40937	5985	replication factor C (activator 1) 5 (36.5kD)	FY01 SN00
+492	activator 1 37-kDa subunit; replication factor C 37-kDa subunit (RFC37); RFC4	15C	M87339	P35249	5984	replication factor C (activator 1) 4 (37kD)	FY01 SN00
+342	replication factor C 38-kDa subunit (RFC38); activator 1 38-kDa subunit	15D	L07541	P40938	5983	replication factor C (activator 1) 3 (38kD)	FY01 SN00
+491	activator 1 40-kDa subunit (A1 40-kDa subunit); replication factor C 40-kDa subunit (RFC40); RFC2	15E	M87338	P35250	5982	replication factor C (activator 1) 2 (40kD)	FY01 SN00
+151	activator 1 140-kDa subunit (A1 140-kDa subunit); replication factor C large subunit; DNA-binding protein PO-GA	15F	L14922	P35251	5981	replication factor C (activator 1) 1 (145kD)	FY01 SN00
+567	DNA polymerase alpha catalytic subunit (POLA)	15G	X06745	P09884	5422	polymerase (DNA directed), alpha	FY02 FY01 SN00
+S42	DNA polymerase delta catalytic subunit	15H	M80397	P28340	5424	polymerase (DNA directed), delta 1, catalytic subunit (125kD)	FY01 SN00
+719	growth arrest & DNA damage-inducible protein (GADD45); DNA damage-inducible transcript 1 (DDIT1)	15I	M60974	P24522	1647	growth arrest and DNA-damage-inducible, alpha	FO00 FY04 FG00 FH00 SN00
+732	growth arrest & DNA damage-inducible protein 153 (GADD153); DNA damage-inducible transcript 3 (DDIT3); C/EBP homologous protein (CHOP)	15J	S40706, S62138	P35638	1649	DNA-damage-inducible transcript 3	FO10 FY00 FG00 FH00 SN00
+864	DNA damage repair & recombination protein 50 homolog (RAD50)	15K	U63139	Q92878	10111	RAD50 (S. cerevisiae) homolog	FY02 FH00 SN00
+308	DNA damage repair & recombination protein 51 homolog (RAD51)	16B	D13804	Q06609	5888	RAD51 (S. cerevisiae) homolog (E coli RecA homolog)	FY03 FY02 FH00 SN00
+830	DNA damage repair & recombination protein 52 homolog (RAD52)	16C	U12134	P43351, Q13205	5893	RAD52 (S. cerevisiae) homolog	FY02 FY03 FH00 SN00
+S52	transcriptional regulator atrX; X-linked helicase II (XH2); X-linked nuclear protein (XNP); RAD54L	16D	U09820	P46100, P51068, Q15886	546	alpha thalassemia/mental retardation syndrome X-linked (RAD54 (S. cerevisiae) homolog)	FQ03 FY01 FY02 SH00 SN00
+S83	DNA damage repair & recombination protein 54 homolog (RAD54)	16E	X97795	Q92698	8438	RAD54 (S.cerevisiae)-like	FY02 SN00
+748	breast cancer type 2 susceptibility protein (BRCA2)	16F	U43746	P51587	675	breast cancer 2, early onset	FG00 FY02 SN00
+S15	meiotic recombination protein DMC1/LIM15 homolog	16G	D63882	Q14565, Q99498	11144	DMC1 (dosage suppressor of mck1, yeast homolog) meiosis-specific homologous recombination	FY02 FY03 SN00
+869	DNA ligase IV (LIG4); polydeoxyribonucleotide synthase	16H	X83441	P49917	3981	ligase IV, DNA, ATP-dependent	FY02 FY01 FH00 SN00
+468	ubiquitin-conjugating enzyme E2 17-kDa (UBE2A); ubiquitin-protein ligase; ubiquitin carrier protein; HR6A	16I	M74524	P49459	7319	ubiquitin-conjugating enzyme E2A (RAD6 homolog)	FY02 FT00 FU08 SN00
+S93	ubiqitin-conjugating enzyme E2-17-kDa (UBE2B); ubiquitin-protein ligase; ubiquitin carrier protein; HR6B	16J	M74525	P23567	7320	ubiquitin-conjugating enzyme E2B (RAD6 homolog)	FU06 SC00 SN00
+S85	X-ray repair-complementing defective repair in Chinese hamster cells 2 (XRCC2)	16K	Y08837	O43543	7516	X-ray repair complementing defective repair in Chinese hamster cells 2	FY02 SN00
+S60	X-ray repair-complementing defective repair in Chinese hamster cells 4 (XRCC4)	17B	U40622	Q13426	7518	X-ray repair complementing defective repair in Chinese hamster cells 4	FY02 FY03 SN00
+424	G22P1; Ku 70-kDa subunit (KU70); 70-kDa thyroid autoantigen (TLAA)	17C	M32865, S38729	P12956	2547	thyroid autoantigen 70kD (Ku antigen)	FY02 FY01 FH00 SN00
+417	Ku (p70/p80) subunit; ATP-dependent DNA helicase II 86-kDa subunit; lupus ku autoantigen protein; thyroid-lupus autoantigen (TLAA); CTC box binding factor 85-kDa subunit (CTCBF; CTC85); nuclear factor IV	17D	M30938	P13010	7520	X-ray repair complementing defective repair in Chinese hamster cells 5 (double-strand-break rejoining; Ku autoantigen, 80kD)	FY02 FY01 FH00 SN00
+745	DNA-dependent protein kinase (DNA-PK); DNA-PK catalytic subunit (DNA-PKCS)	17E	U35835, U47077	Q13337, P78527, Q14175		DNA-dependent protein kinase (DNA-PK); DNA-PK catalytic subunit (DNA-PKCS)	FY02 FH00 SN00
+S36	V(D)J recombination activating protein 1 (RAG1)	17F	M29474	P15918	5896	recombination activating gene 1	FY03 SN00
+S104	V(D)J recombination activating protein 2 (RAG2)	17G	M94633	P55895	5897	recombination activating gene 2	FY03 SN00
+662	mutL protein homolog1 (MLH1; hMLH1); colon cancer nonpolyposis type 2 protein (COCA2)	17H	U07418	P40692	4292	mutL (E. coli) homolog 1 (colon cancer, nonpolyposis type 2)	FY02 FH00 SN00
+C54	DNA mismatch repair protein MSH2	17I	U04045, L47583	P43246	4436	mutS (E. coli) homolog 2 (colon cancer, nonpolyposis type 1)	FY02 FH00 SN00
+S20	DNA mismatch repair protein MSH3; divergent upstream protein (DUP); mismatch repair protein 1 (MRP1)	17J	J04810	P20585, Q92867	4437	mutS (E. coli) homolog 3	FY02 SN00
+C77	DNA mismatch repair protein MSH6; mutS alpha 160-kDa subunit; G/T mismatch binding protein (GTMBP; GTBP)	17K	U54777	P52701, O43706, O43917	2956	mutS (E. coli) homolog 6	FY02 FH00 SN00
+S106	DNA mismatch repair protein PMS2 (PMS1 protein homolog 2)	18B	U13696	P54278	5395	postmeiotic segregation increased (S. cerevisiae) 2	FY02 FG00 FH00 SN00
+S105	DNA mismatch repair protein PMS1 (PMS1 protein homolog 1)	18C	U13695	P54277	5378	postmeiotic segregation 1	FY02 FG00 FH00 SN00
+S151	polymorphic arylamine N-acetyltransferase (PNAT) + monomorphic (MNAT)	18D	X14672, X17059	P18440	10	N-acetyltransferase 2 (arylamine N-acetyltransferase)	FH02 SC00
+S87	cytochrome P450 IA2 (CYP1A2)	18E	Z00036	P05177, Q16754	1544	cytochrome P450, subfamily I (aromatic compound-inducible), polypeptide 2	FH03 SE00
+S18	cytochrome P450 IVB1 (CYP4B1); P450-HP	18F	J02871	P13584	1580	cytochrome P450, subfamily IVB, polypeptide 1	FH03 SE00
+S115	cytochrome P450 IIA6 (CYP2A6); CYP2A3; coumarin 7-hydroxylase	18G	M33318, X13930, X13897	P11509, P10890, P00190, Q16803	1548	cytochrome P450, subfamily IIA (phenobarbital-inducible), polypeptide 6	FH03 FL05 SE00 SR00
+S116	S-mephenytoin 4 hydroxylase; cytochrome P450 IIC9 (CYP2C9); CYP2C10; CYP2C17; CYP2C18; CYP2C19	18H	M21940, M15331, M21939, M61858, M61854	P11712, P11713, P33259, P33260, P33261		S-mephenytoin 4 hydroxylase; cytochrome P450 IIC9 (CYP2C9); CYP2C10; CYP2C17; CYP2C18; CYP2C19	FH03 SE00
+S51	NADP+ dihydropyrimidine dehydrogenase (DPD); dihydrouracil dehydrogenase; dihydrothymine dehydrogenase (DPYD)	18I	U09178	Q12882, Q16694, Q16761	1806	dihydropyrimidine dehydrogenase	FL06 SC00
+S92	N-oxide forming dimethylaniline monooxygenase 1; hepatic flavin-containing monooxygenase 1 (FMO1); dimethylaniline oxidase 1	18J	M64082	Q01740	2326	flavin containing monooxygenase 1	FH04 SR00
+S101	N-oxide-forming dimethylaniline monooxygenase 4; hepatic flavin-containing monooxygenase 4 (FMO4)	19B	Z11737	P31512	2329	flavin containing monooxygenase 4	FH03 FL09 SR00
+S89	N-oxide forming dimethylaniline monooxygenase 5; hepatic flavin-containing monooxygenase 5 (FMO5); dimethylaniline oxidase 5	19C	L37080	P49326	2330	flavin containing monooxygenase 5	FH03 FL09 SR00
+S69	porphobilinogen deaminase (PBGD); hydroxymethylbilane synthase (HMBS); pre-uroporphyrinogen synthase	19D	X04808	P08397, P08396, Q16012	3145	hydroxymethylbilane synthase	FL08 FL09 SC00
+S91	multidrug resistance protein 3 (MDR3); P-glycoprotein 3 (PGY3)	19E	M23234	P21439	5244	ATP-binding cassette, sub-family B (MDR/TAP), member 4	FH02 FH04 FI09 SB00
+S24	ATP-binding cassette subfamily C member 1 (ABCC1); multidrug resistance-associated protein 1 (MRP1)	19F	L05628	P33527, O14819	4363	ATP-binding cassette, sub-family C (CFTR/MRP), member 1	FH02 FH04 FI09 SB00
+S48	nicotinamide N-methyltransferase (NNMT)	19G	U08021	P40261	4837	nicotinamide N-methyltransferase	FH03 FL09 SC00
+S50	phenol-sulfating phenol sulfotransferase 1 (PPST1); thermostable phenol sulfotransferase (TS-PST); HAST1/HAST2; ST1A3; STP1 + PPST2; ST1A2; STP2 + monoamine-sulfating phenol sulfotransferase	19H	U09031, U28170, L19956	P50225, P50226, P50224	6817	sulfotransferase family, cytosolic, 1A, phenol-preferring, member 1	FH03 FL06 SC00
+S49	microsomal UDP-glucuronosyltransferase 2B15 (UDPGT); UDPGTH-3; UGT2B15 + microsomal 2B10 (UDPGT); UGT2B10 + 2microsomal B8	19I	U08854, X63359, U06641, J05428, Y00317	P54855	7366	UDP glycosyltransferase 2 family, polypeptide B15	FL06 SC00
+S142	monoamine oxidase A (MAOA)	19J	M68840	P21397, Q16426	4128	monoamine oxidase A	FL06 SM00
+905	ubiquitin C (UBC)	1A	M26880		7316	ubiquitin C	FU00 FH00 FQ03 SC00 SN00
+906	phospholipase A2; tyrosine 3-monooxygenase/tryptophan 5-monooxygenase activation protein zeta polypeptide (YWHAZ); 14-3-3 protein zeta/delta; protein kinase C inhibitor protein 1 (KCIP1); factor activating exoenzyme S (FAS)	1B	M86400	P29312, P29213	7534	tyrosine 3-monooxygenase/tryptophan 5-monooxygenase activation protein, zeta polypeptide	FT06 FL05 SC00
+907	hypoxanthine-guanine phosphoribosyltransferase 1 (HPRT1)	1C	V00530	P00492	3251	hypoxanthine phosphoribosyltransferase 1 (Lesch-Nyhan syndrome)	FL06 SC00
+16	liver glyceraldehyde 3-phosphate dehydrogenase (GAPDH; G3PDH)	1D	X01677	P04406	2597	glyceraldehyde-3-phosphate dehydrogenase	FL02 FL03 FY02 SC00 SN00
+901	tubulin alpha 1 (TUBA1)	1E	K00558	P04687	10376	tubulin, alpha, ubiquitous	FW00 SC00 SK00
+902	major histocompatibility complex class I C (HLAC)	1F	M11886	P10321	3107	major histocompatibility complex, class I, C	FE02 SB00
+49	cytoplasmic beta-actin (ACTB)	1G	X00351	P02570, Q11211, P99021, Q64316, P70514	60	actin, beta	FW00 SC00 SK00
+903	23-kDa highly basic protein; 60S ribosomal protein L13A (RPL13A)	1H	X56932	P40429	23521	ribosomal protein L13a	FN01 FE03 SC00 SB00
+904	40S ribosomal protein S9 (RPS9)	1I	U14971	P46781	6203	ribosomal protein S9	FN01 SC00
+S143	flavin-containing amine oxidase B; monoamine oxidase (MAOB)	20B	M69177	P27338	4129	monoamine oxidase B	FH03 FL08 SM00
+S128	cytochrome P450 IA1 (CYP1A1); P450-P1; P450 form 6; P450-C	20C	K03191	P04798	1543	cytochrome P450, subfamily I (aromatic compound-inducible), polypeptide 1	FH03 FL05 SE00 SR00
+S136	cytochrome P450 IID6 (CYP2D6); P450-DB1; debrisoquine 4-hydroxylase	20D	M20403	P10635, Q16752	1565	cytochrome P450, subfamily IID (debrisoquine, sparteine, etc., -metabolizing), polypeptide 6	FH03 FL05 SE00 SR00
+S124	cytochrome P450 IIE1 (CYP2E1)	20E	J02625	P05181	1571	cytochrome P450, subfamily IIE (ethanol-inducible)	FH03 FL05 SE00 SR00
+S125	cytochrome P450 IIF1 (CYP2F1)	20F	J02906	P24903	1572	cytochrome P450, subfamily IIF, polypeptide 1	FH03 SE00
+S135	mitochondrial cytochrome P450 XIA1 (CYP11A1); P450 cholesterol side chain cleavage (P450SCC)	20G	M14565	P05108	1583	cytochrome P450, subfamily XIA (cholesterol side chain cleavage)	FH03 SM00
+S153	cytochrome P450 XIB1 (CYP11B1); steroid 11-beta-hydroxylase  (S11BH)	20H	X55764	P15538	1584	cytochrome P450, subfamily XIB (steroid 11-beta-hydroxylase), polypeptide 1	FH03 FL05 SM00
+S134	cytochrome P450 XXIB (CYP21B); CYP21A2; steroid 21-hydroxylase	20I	M12792, M23280	P08686, P04033, Q01204	1589	cytochrome P450, subfamily XXIA (steroid 21-hydroxylase, congenital adrenal hyperplasia), polypeptide 2	FH03 FL05 SE00 SR00
+S131	liver carboxylesterase; acyl coenzyme A:cholesterol acyltransferase (ACAT); monocyte/macrophage serine esterase (hMSE); CES2	20J	L07765	P23141, Q16737, Q14062, Q13657, Q00015	1066	carboxylesterase 1 (monocyte/macrophage serine esterase 1)	FE03 FH03 FL05 SE00
+S127	glutathione S-transferase mu 3 (GSTM3); GST5	21B	J05459	P21266	2947	glutathione S-transferase M3 (brain)	FH03 FL08 SC00
+645	glutathione reductase (GSR)	21C	X15722	P00390	2936	glutathione reductase	FH04 FO00 SC00
+648	microsomal glutathione S-transferase 1 (MGST1); GST12	21D	J03746	P10620	4257	microsomal glutathione S-transferase 1	FH04 FO00 SC00
+651	glutathione S-transferase mu1 (GSTM1; GST1); HB subunit 4; GTH4	21E	X68676, S01719	P09488	2948	glutathione S-transferase M4	FH05 FO10 SC00
+652	glutathione S-transferase pi (GSTP1); GST3; fatty acid ethyl ester synthase III (FAEES3)	21F	X08058, M24485	P09211	2950	glutathione S-transferase pi	FH04 FO00 SC00
+653	glutathione S-transferase A1 (GTH1; GSTA1); HA subunit 1; GST-epsilon	21G	M25627	P08263, Q14750	2939	glutathione S-transferase A2	FH05 FO10 SC00
+658	glutathione peroxidase 1 (GSHPX1; GPX1)	21H	Y00483, M21304	P07203	2876	glutathione peroxidase 1	FH04 FO00 SC00
+671	glutathione S-transferase theta 1 (GSTT1)	21I	X79389	P30711, O00226	2952	glutathione S-transferase theta 1	FH04 FO00 SC00
+C370	glutathione-S-transferase-like protein (GSTTLp28); glutathione transferase omega (GSTO1)	21J	U90313	P78417	9446	glutathione-S-transferase like; glutathione transferase omega	FH05 FO00 FY00 FL08 SC00
+S130	soluble epoxide hydrolase (SEH); cytosolic epoxide hydrolase (CEH; EPHX2; EPH2); epoxide hydratase	22B	L05779	P34913	2053	epoxide hydrolase 2, cytoplasmic	FH02 SP00 SC00
+S138	microsomal UDP-glucuronosyltransferase 1-1 (UDPGT; UGT1.1; UGT1A; GNT1); bilirubin-specific isozyme 1 (hUG-BR1)	22C	M57899	P22309	54658	UDP glycosyltransferase 1 family, polypeptide A1	FH03 SR00
+S148	microsomal UDP-glucuronosyltransferase 1-2 (UDPGT; UGT1.2; UGT1B; GNT1); HLUGP4	22D	S55985	P36509		microsomal UDP-glucuronosyltransferase 1-2 (UDPGT; UGT1.2; UGT1B; GNT1); HLUGP4	FH03 SR00
+S146	microsomal UDP-glucuronosyltransferase 1-3 (UDPGT; UGT1.3; UGT1C; GNT1)	22E	M84127	P35503	54659	UDP glycosyltransferase 1 family, polypeptide A3	FH03 SR00
+S139	microsomal UDP-glucuronosyltransferase 1-4 (UDPGT; UGT1.4; UGT1D; GNT1); bilirubin-specific isozyme 2 (hUG-BR2)	22F	M57951	P22310	7362	UDP glycosyltransferase 2 family, polypeptide B	FH03 SR00
+S126	microsomal UDP-glucuronosyltransferase 1-6 (UDPGT; UGT1.6; UGT1F; GNT1)	22G	J04093	P19224	54578	UDP glycosyltransferase 1 family, polypeptide A6	FH03 SR00
+S154	cytochrome P450 IVA11 (CYP4A11)	22H	X71480	Q06766		cytochrome P450 IVA11 (CYP4A11)	FH03 FL03 FL05 SR00
+S156	bleomycin hydrolase (BLM hydrolase)	22I	X92106	Q13867	642	bleomycin hydrolase	FU05 FH02 SC00 
+S141	membrane-bound & soluble catechol-O-methyltransferase (COMT)	22J	M65212	P21964	1312	catechol-O-methyltransferase	FL06 SC00 SB00
+S158	coproporphyrinogen III oxidase (CPO); coproporphyrinogenase; coprogen oxidase (COX)	23B	Z28409	P36551	1371	coproporphyrinogen oxidase (coproporphyria, harderoporphyria)	FL08 FL09 SM00
+S157	diaphorase 1 (DIA1); cytochrome b5 reductase	23C	Y09501	P00387	1727	diaphorase (NADH) (cytochrome b-5 reductase)	FH03 FL03 FL05 SC00 SE00
+S150	short/branched chain-specific acyl-CoA dehydrogenase (SBCAD; ACADSB); 2-methyl branched chain acyl-CoA dehydrogenase (2-MEBCAD)	23D	U12778	P45954	36	acyl-Coenzyme A dehydrogenase, short/branched chain	FH03 FL03 FL04 SM00
+S152	glutathione peroxidase-gastrointestinal (GSHPX-GI); glutathione peroxidase-related protein 2 (GPRP)	23E	X53463	P18283		glutathione peroxidase-gastrointestinal (GSHPX-GI); glutathione peroxidase-related protein 2 (GPRP)	FH04 FO00 SC00
+S140	serum paraoxonase/arylesterase 1 (PON1); serum aryldiakylphosphatase 1; aromatic esterase 1 (A-esterase 1)	23F	M63012	P27169	5444	paraoxonase 1	FH02 SF00
+S132	serum paraoxonase/arylesterase 2 (PON2); serum aryldiakylphosphatase 2; aromatic esterase 2 (A-esterase 2)	23G	L48513	Q15165, O15114, O15115, O75856		serum paraoxonase/arylesterase 2 (PON2); serum aryldiakylphosphatase 2; aromatic esterase 2 (A-esterase 2)	FH03 SF00
+S133	serum paraoxonase/arylesterase 3 (PON3); serum aryldiakylphosphatase 3; aromatic esterase 3 (A-esterase 3)	23H	L48516	Q15166, O75855, O76060	5446	paraoxonase 3	FH03 SF00
+S149	thiopurine S-methyltransferase (TPMT)	23I	S62904	P51580, O43213, O14806, O15515, O15423	7172	thiopurine S-methyltransferase	FH03 FL06 SC00
+S129	peroxisome proliferatitve-activated receptor alpha (PPAR-alpha; PPARA)	23J	L02932	Q07869, Q92689, Q16241, Q92486	5465	peroxisome proliferative activated receptor, alpha	FB03 FR03 FV05 SN00
+C277	c-fos proto-oncogene; G0S7 protein	3B	K00650	P01100	2353	v-fos FBJ murine osteosarcoma viral oncogene homolog	FG00 FB03 FT00 SN00
+421	activating transcription factor 2 (ATF2); cAMP response element DNA-binding protein 1 (CREBP1); HB16	3C	M31630	P15336		activating transcription factor 2 (ATF2); cAMP response element DNA-binding protein 1 (CREBP1); HB16	FB03 FT00 SN00
+427	cAMP-response element binding protein 1 (CREB1)	3D	M34356	P16220, P21934	1385	cAMP responsive element binding protein 1	FB03 FT00 SN00
+766	mitogen-activated protein kinase 3 (MAP kinase 3; MAPK3; PRKM3); extracellular signal-regulated kinase 1 (ERK1); ERT2	3E	X60188	P27361		mitogen-activated protein kinase 3 (MAP kinase 3; MAPK3; PRKM3); extracellular signal-regulated kinase 1 (ERK1); ERT2	FC02 FT02 SC00 SN00 SK00
+727	mitogen-activated protein kinase 1 (MAP kinase 1; MAPK1; PRKM1); extracellular signal-regulated kinase 2 (ERK2)	3F	M84489	P28482	5594	mitogen-activated protein kinase 1	FC02 FT02 SC00 SN00
+769	mitogen-activated protein kinase 6 (MAP kinase 6; MAPK6; PRKM6); p97-MAPK; extracellular signal-regulated kinase 3 (ERK3)	3G	X80692	Q16659	5597	mitogen-activated protein kinase 6	FC02 FT02 SC00 SN00
+C195	mitogen-activated protein kinase 4 (MAP kinase 4; MAPK4; PRKM4); p63-MAPK; extracellular signal-regulated kinase 4 (ERK4)	3H	X59727	P31152	5596	mitogen-activated protein kinase 4	FC02 FT02 SC00 SN00
+C172	mitogen-activated protein kinase 7 (MAP kinase 7; MAPK7; PRKM7); extracellular signal-regulated kinase 5 (ERK5); BMK1 kinase	3I	U25278	Q13164, Q16634	5598	mitogen-activated protein kinase 7	FC02 FT02 SC00 SN00
+C207	mitogen-activated protein kinase 12 (MAP kinase 12; MAPK12; PRKM12); MAP kinase p38 gamma; stress-activated protein kinase 3 (SAPK3); extracellular signal-regulated kinase 6 (ERK6)	3J	X79483	P53778	6300	mitogen-activated protein kinase 12	FC02 FT02 SC00 SN00
+704	mitogen-activated protein kinase p38 (MAP kinase p38); cytokine suppressive anti-inflammatory drug-binding protein (CSAID binding protein; CSBP); MAX-interacting protein 2 (MXI2)	3K	L35253, L35263	Q16539, Q14084, Q13083	1432	mitogen-activated protein kinase 14	FT02 FC02 SC00
+C179	mitogen-activated protein kinase P38 beta (MAP kinase P38 beta); stress-activated protein kinase 2 (SAPK2)	3L	U53442	Q15759, O00284	5600	mitogen-activated protein kinase 11	FT02 SC00
+702	mitogen-activated protein kinase 8 (MAPK8; PRKM8); c-jun N-terminal kinase 1 (JNK1); stress-activated protein kinase gamma (SAPK-gamma)	3M	L26318	P45983, Q15709, Q15712, Q15713	5599	mitogen-activated protein kinase 8	FT02 FH00 SC00
+779	mitogen-activated protein kinase 9 (MAP kinase 9; MAPK9; PRKM9); c-jun N-terminal kinase 2 (JNK2)	3N	L31951	P45984, Q15708, Q15710, Q15711	5601	mitogen-activated protein kinase 9	FT02 FH00 SC00
+791	mitogen-activated protein kinase 10 (MAP kinase 10; MAPK10; PRKM10); MAP kinase p493F12; c-jun N-terminal kinase 3 alpha 2 (JNK3A2)	3O	U34819, U07620	P53779, Q15707	5602	mitogen-activated protein kinase 10	FT02 FH00 SC00
+C315	mitogen-activated protein kinase kinase 5 (MAP kinase kinase 5; MAPKK5; MAP2K5; PRKMK5); MAPK/ERK kinase 5 (MEK5)	4B	U25265	Q13163	5607	mitogen-activated protein kinase kinase 5	FT02 FC02 SC00
+335	mitogen-activated protein kinase kinase 1 (MAP kinase kinase 1; MAPKK1; MAP2K1; PRKMK1); MAPK/ERK kinase 1 (MEK1)	4C	L05624	Q02750	5604	mitogen-activated protein kinase kinase 1	FT02 FC02 SC00
+C286	mitogen-activated protein kinase kinase 2 (MAP kinase kinase 2; MAPKK2; MAP2K2; PRKMK2); MAPK/ERK kinase 2 (MEK2)	4D	L11285	P36507	5605	mitogen-activated protein kinase kinase 2	FT02 FC02 SC00
+849	mitogen-activated protein kinase kinase 6 (MAP kinase kinase 6; MAPKK6; MAP2K6; PRKMK6); MAPK/ERK kinase 6 (MEK6); SAPKK3	4E	U39657	P52564	5608	mitogen-activated protein kinase kinase 6	FT02 FC02 SC00
+C250	MAPK/ERK kinase kinase 3 (MEK kinase 3; MEKK3)	4F	U78876	Q99759	4215	mitogen-activated protein kinase kinase kinase 3	FT02 FC02 SC00
+S14	YSK1; Ste20 & SPS1-related kinase	4G	D63780	O00506	10494	serine/threonine kinase 25 (Ste20, yeast homolog)	FT02 SC00
+S99	SPS1/Ste20 homolog KHS1	4H	U77129		11183	mitogen-activated protein kinase kinase kinase kinase 5	FT02 SC00
+S114	B-lymphocyte germinal center kinase (GC kinase)	4I	U07349	Q12851	5871	mitogen-activating protein kinase kinase kinase kinase 2	FT02 SC00
+S98	hematopoietic progenitor kinase (HPK1)	4J	U66464	Q92918	11184	mitogen-activated protein kinase kinase kinase kinase 1	FT02 SN00
+S1	nck, ash & phospholipase C gamma-binding protein (NAP4)	4K	AB005216	O14512	30837	Nck, Ash and phospholipase C binding protein	FT10 SC00 SN00
+S74	NCK melanoma cytoplasmic src homolog (HSNCK)	4L	X17576	P16333	4690	NCK adaptor protein 1	FT01 SC00
+C171	p21-activated kinase gamma (PAK-gamma; PAK2); PAK65; S6/H4 kinase	4M	U24153	Q13177, Q13154	5062	p21 (CDKN1A)-activated kinase 2	FT02 FC00 SC00
+C154	CDC42 homolog; G25K GTP-binding protein (brain isoform + placental isoform)	4N	M35543, M57298	P21181, P25763	998	cell division cycle 42 (GTP-binding protein, 25kD)	FT04 FG00 SB00
+S53	tumor necrosis factor type 1 receptor-associated protein (TRAP1)	4O	U12595	Q12931, O75235	10131	heat shock protein 75	FO03 SC00
+S54	26S proteasome regulatory subunit S2 (PSMD2); tumor necrosis factor type 1 receptor-associated protein (TRAP2); 55.11 protein	5B	U12596	Q13200, Q12932, Q15321	5708	proteasome (prosome, macropain) 26S subunit, non-ATPase, 2	FT01 FU06 SB00 SC00 SN00
+C88	nucleoside diphosphate kinase A (NDKA); NDP kinase A; tumor metastatic process-associated protein; metastasis inhibition factor NM23 (NM23-H1)	5C	X17620	P15531	4830	non-metastatic cells 1, protein (NM23A) expressed in	FG00 FO00 FB03 SN00 SC00
+152	heat shock transcription factor 1 (HSTF1; HSF1); transcription factor 5 (TCF5)	5D	M64673	Q00613	3297	heat shock transcription factor 1	FB03 SN00
+S40	heat shock transcription factor 2 (HSTF2; HSF2)	5E	M65217	Q03933	3298	heat shock transcription factor 2	FB02 SC00 SN00
+S17	heat shock transcription factor 4 (HHSF4)	5F	D87673	Q99472	3299	heat shock transcription factor 4	FB02 SN00
+C18	FKBP-rapamycin associated protein (FRAP); rapamycin target protein	5G	L34075	P42345	2475	FK506 binding protein 12-rapamycin associated protein 1	FT10 FC00 SC00 SN00
+S117	interferon-inducible RNA-dependent protein kinase (P68 kinase)	5H	M35663, U50648	P19525	5610	protein kinase, interferon-inducible double stranded RNA dependent	FO09 FT02 SC00
+S118	mitochondrial heat shock 10-kDa protein (HSP10); HSPE1; 10-kDa chaperonin (CPN10)	5I	U07550	Q04984, O95421	3336	heat shock 10kD protein 1 (chaperonin 10)	FH01 FM01 SM00
+S16	110-kDa heat-shock protein (HSP110); 105-kDa heat-shock protein (HSP105); KIAA0201	5J	D86956	Q92598, O95739	10808	heat shock 105kD	FH01 SC00
+761	27-kDa heat shock protein (HSP27); stress-responsive protein 27 (SRP27); estrogen-regulated 24-kDa protein; HSPB1	5K	X54079	P04792	3315	heat shock 27kD protein 1	FH01 SC00
+S80	collagen-binding protein 1 (CBP1); CBP2; colligin 1; colligin 2; heat shock 47-kDa protein (HSP47)	5L	X61598, D83174	P29043, P50454	871	serine (or cysteine) proteinase inhibitor, clade H (heat shock protein 47), member 1	FJ00 FM01 FU07 SE00 ST00
+817	heat shock 70-kDa protein 1 (HSP70.1; HSPA1)	5M	M11717	P08107, P19790	3303	heat shock 70kD protein 1A	FH01 SC00
+S123	heat shock-related 70-kDa protein 2	5N	L26336	P54652	3306	heat shock 70kD protein 2	FH01 SC00
+S28	heat shock 70-kDa protein 4 (HSPA4); HSP70RY; heat shock 70-related protein APG-2	5O	L12723	P34932, O95756	3308	heat shock 70kD protein 4	FH01 SC00
+S121	heat shock 70-kDa protein 6; heat shock 70-kDa protein B	6B	X51757, M11236	P48741	3310	heat shock 70kD protein 6 (HSP70B`)	FH01 FO00 SC00
+S122	heat shock cognate 71-kDa protein; heat shock 70-kDa protein 8 (HSPA8; HSC70); HSP73	6C	Y00371	P11142	10722		FH01 SC00
+755	90-kDa heat-shock protein A (HSP90A); HSP86; HSPCA	6D	X07270	P07900		90-kDa heat-shock protein A (HSP90A); HSP86; HSPCA	FH01 SC00
+S120	90-kDa heat-shock protein beta (HSP90); 84-kDa heat-shock protein beta (HSP84); HSPCB	6E	M16660	P08238	3326	heat shock 90kD protein 1, beta	FH01 FM01 SC00
+S119	heat shock 17-kDa protein (HSP17); HSPL27; HSPB3	6F	U15590	Q12988	8988	heat shock 27kD protein 3	FH01 FW04 SC00 SK00
+S46	heat shock protein beta 2 (HSPB2); DMPK-binding protein; MKBP	6G	S67070	Q16082	3316	heat shock 27kD protein 2	FH01 SC00
+S96	heat shock protein 40 homolog (HSP40 homolog); DNAJW	6H	U40992	P31948	11080	DnaJ-like heat shock protein 40	FH01 SC00
+S30	mitochondrial stress-70 protein; 75-kDa glucose-regulated protein (GRP75); peptide-binding protein 74 (PBP74); mortalin (MOT);  HSPA9B	6I	L15189	P38646, P30036, P31932	3313	heat shock 70kD protein 9B (mortalin-2)	FH01 FM01 SM00
+S58	HSC70-interacting protein; progesterone receptor-associated P48 protein	6J	U28918	P50502	6767	suppression of tumorigenicity 13 (colon carcinoma) (Hsp70-interacting protein)	FM01 SC00
+S2	DNAJ protein homolog 2 (DNAJ2; hDJ2; HSJ2)	6K	D13388	P31689	3301	heat shock protein, DNAJ-like 2	FH01 FM01 SC00 SG00 SN00
+695	40-kDa heat-shock protein 1 (HSP40); DNAJ protein homolog 1 (HDJ1; DNAJ1)	6L	D49547	P25685	3337	heat shock 40kD protein 1	FH01 SC00
+S103	70-kDa heat shock protein 5 (HSPA5); 78-kDa glucose-regulated protein (GRP78); immunoglobulin heavy chain binding protein (BIP)	6M	M19645	P11021	3309	heat shock 70kD protein 5 (glucose-regulated protein, 78kD)	FE03 SF00
+S26	calnexin (CANX); major histocompatibility complex class I antigen-binding protein p88; IP90	6N	L10284, L18887, M94859, M98452	P27824	821	calnexin	FE02 FM03 FT08 SB00 SE00
+S43	calreticulin (CRP55); calregulin; HACBP; ERP60; 52-kDa ribonucleoprotein autoantigen RO/SS-A	6O	M84739	P27797	811	calreticulin	FM03 SB00 SE00
+S21	protein disulfide isomerase-related protein ERP72	7B	J05016	P13667	9601	protein disulfide isomerase related protein (calcium-binding protein, intestinal-related)	FL09 FM03 SE00
+S31	p23; 23-kDa progesterone receptor-associated protein	7C	L24804, L24805	Q15185	10728	unactive progesterone receptor, 23 kD	FR03 SC00
+S44	transformation-sensitive protein IEF SSP 3521	7D	M86752	P31948	10963	stress-induced-phosphoprotein 1 (Hsp70/Hsp90-organizing protein)	FH05 SG00 SN00
+S27	cyclophilin 40 (CYP40; CYPD); 40-kDa peptidyl-prolyl cis-trans isomerase (PPIase); rotamase; cyclophilin-related protein	7E	L11667	Q08752	5481	peptidylprolyl isomerase D (cyclophilin D)	FM02 SC00
+S65	48-kDa FKBP-associated protein (FAP48)	7F	U73704	P31948	11146	FKBP-associated protein	FE03 FT10 SC00
+S97	51-kDa FK506-binding protein (FKBP51); peptidyl-prolyl cis-trans isomerase (PPIase); rotamase; 54-kDa progesterone receptor-associated immunophilin; FKBP54; FF1 antigen; HSP90-binding immunophilin	7G	U42031	Q13451	2289	FK506-binding protein 5	FM02 SC00 SN00
+S37	FK506-binding protein 12 (FKBP12); peptidyl-prolyl cis-trans isomerase (PPIase); rotamase	7H	M34539, M80199, M92423, X55741, X52220	P20071	2280	FK506-binding protein 1A (12kD)	FE03 FM02 SC00
+S95	p59 protein; HSP-binding immunophilin (HBI); possible peptidyl-prolyl cis-trans isomerase (PPIase); rotamase; 52-kDa FK506-binding protein (FKBP52); FKBP59; HSP56; FKBP4	7I	M88279	Q02790	2288	FK506-binding protein 4 (59kD)	FK01 FM02 SC00 SN00
+S39	FK506-binding protein 13 (FKBP13); FKBP2; peptidyl-prolyl cis-trans isomerase (PPIase)	7J	M65128	P26885	2286	FK506-binding protein 2 (13kD)	FE03 FM02 SE00
+763	vimentin (VIM)	7K	X56134, M14144	P08670	7431	vimentin	FW02 SK00
+717	heat shock 60-kDa protein (HSP60); HSPD1; 60-kDa chaperonin; mitochondrial matrix protein P1; p60 lymphocyte protein; HUCHA60; GroEL protein	7L	M34664	P10809	3329	heat shock 60kD protein 1 (chaperonin)	FH01 SM00
+C259	BCL2-binding athanogene 1 (BAG1); glucocorticoid receptor-associated protein RAP46	7M	S83171, Z35491	Q99933, Q14414, O75315		BCL2-binding athanogene 1 (BAG1); glucocorticoid receptor-associated protein RAP46	FO05 SE00 SU00 SM00
+S9	ubiquitin-like protein NEDD8	7N	D23662	Q15843	4738	neural precursor cell expressed, developmentally down-regulated 8	FU06 SC00 SN00
+S77	T-complex protein 1 alpha subunit (TCP1-alpha); CCT-alpha (CCTA; CCT1)	7O	X52882	P17987, Q15556	6950	t-complex 1	FM01 FH01 SC00
+S59	T-complex protein 1 delta subunit (TCP1-delta); CCT-delta (CCTD; CCT4); stimulator of tar RNA binding (SRB)	8B	U38846	P50991, O14870	10575	chaperonin containing TCP1, subunit 4 (delta)	FM01 SC00
+S11	T-complex protein 1 epsilon subunit (TCP1-epsilon); CCT-epsilon (CCTE; CCT5)	8C	D43950	P48643	22948	chaperonin containing TCP1, subunit 5 (epsilon)	FM01 SC00
+S82	T-complex protein 1 gamma subunit (TCP1-gamma); CCT-gamma (CCTG; CCT3); TRIC5	8D	X74801, U17104	P49368	7203	chaperonin containing TCP1, subunit 3 (gamma)	FM01 SC00
+S67	T-complex protein 1 eta subunit (TCP1-eta); CCT-eta (CCTH; CCT7); HIV-1 NEF interacting protein	8E	U83843	Q99832, O14871		T-complex protein 1 eta subunit (TCP1-eta); CCT-eta (CCTH; CCT7); HIV-1 NEF interacting protein	FM01 SC00
+S3	T-complex protein 1 theta subunit (TCP1-theta); CCT-theta (CCTQ; CCT8); KIAA0002	8F	D13627	P50990	10694	chaperonin containing TCP1, subunit 8 (theta)	FM01 SC00
+S70	heme oxygenase 1 (HO1; HMOX1)	8G	X06985	P09601	3162	heme oxygenase (decycling) 1	FH04 SR00
+S8	heme oxygenase 2 (HO2; HMOX2)	8H	D21243, S34389	P30519, O60605	3163	heme oxygenase (decycling) 2	FH04 SR00
+S72	tumor rejection antigen 1 (TRA1); GP96 homolog; 94-kDa glucose-regulated protein (GRP94); endoplasmin	8I	X15187, M33716	P14625	7184	tumor rejection antigen (gp96) 1	FH01 FM01 SE00
+S47	alpha crystallin A chain (CRYAA; CRYA1)	8J	U05569	P02489	1409	crystallin, alpha A	FH01 FM01 SC00 SG00 SN00
+S45	alpha crystallin B subunit (alpha(B)-crystallin; CRYAB; CRYA2); Rosenthal fiber component	8K	S45630	P02511	1410	crystallin, alpha B	FH01 FM01 SC00 SG00 SN00
+S109	beta crystallin A4 (CRYBA4)	8L	U59057	P53673	1413	crystallin, beta A4	FW04 SC00 SK00
+S111	beta crystallin B1 (CRYBB1)	8M	U35340	P53674	1414	crystallin, beta B1	FW04 SC00 SK00
+S112	beta crystallin B2 (CRYBB2); BP	8N	L10035	P43320	1415	crystallin, beta B2	FW04 SC00 SK00
+S113	beta crystallin B3 (CRYBB3; CRYB3)	8O	U71216	P26998, Q92965	1417	crystallin, beta B3	FW04 SC00 SK00
+S160	gamma crystallin C (CRYGC; CRYG3; gamma crystallin 2 + gamma crystallin B (CRYGB; CRYG2); gamma crystallin 1-2	9B	U66582, M11971, M11970	P07315, P07316	1420	crystallin, gamma C	FW04 SC00 SK00
+S23	mu-crystallin homolog (CRYM); NADP-regulated thyroid hormone-binding protein (THBP)	9C	L02950	Q14894	1428	crystallin, mu	FT10 SC00
+S29	quinone oxidoreductase; NADPH:quinone reductase; zeta-crystallin (CRYZ)	9D	L13278, S58039	Q08257	1429	crystallin, zeta (quinone reductase)	FH02 SC00
+S5	probable protein disulfide isomerase ER-60 (ERP60); 58-kDa microsomal protein; phospholipase C alpha (PLC-alpha; PLCA)	9E	D16234, Z49835, D83485, U42068	P30101	2923	glucose regulated protein, 58kD	FM01 SC00
+S12	probable protein disulfide isomerase P5 	9F	D49489	Q15084	10130	protein disulfide isomerase-related protein	FL09 FM03 SE00
+S145	eukaryotic peptide chain release factor subunit 1 (ERF1); TB3-1; C11 protein	9G	M75715	P46055	2107	eukaryotic translation termination factor 1	FN02 SC00
+S13	protein disulfide isomerase-related protein (PDIR)	9H	D49490	Q14554	10954	for protein disulfide isomerase-related	FL09 FM03 SE00
+S147	structure-specific recognition protein 1 (SSRP1); recombination signal sequence recognition protein; T160	9I	M86737	Q08945	6749	structure specific recognition protein 1	FO10 FY03 FY04 SN00
+S63	150-kDa oxygen-regulated protein (ORP150)	9J	U65785		10525	oxygen regulated protein (150kD)	FH01 FM01 SE00
+871	muscle-specific DNase I-like (DNase1L1; DNL1L); DNase X	9K	X90392, L40817, U06846	P49184	1774	deoxyribonuclease I-like 1	FY04 FO00 SB00
+374	ras-related associated with diabetes protein (RRAD); ras associated with diabetes protein 1 (RAD1)	9L	L24564	P55042	6236	Ras-related associated with diabetes	FT04 SB00 SC00
+635	purine-rich element-binding protein A (PURA); purine-rich single-stranded DNA-binding protein alpha (PUR-alpha)	9M	M96684	Q00577	5813	purine-rich element binding protein A	FB03 SN00
+640	6-O-methylguanine-DNA methyltransferase (MGMT); methylated-DNA-protein-cysteine methyltransferase	9N	M29971	P16455	4255	O-6-methylguanine-DNA methyltransferase	FY02 FH00 SN00
+541	cyclin-dependent kinase inhibitor 1A (CDKN1A); melanoma differentiation-associated protein 6 (MDA6); CDK-interacting protein 1 (CIP1); WAF1; SDI1	9O	U09579, L25610	P38936		cyclin-dependent kinase inhibitor 1A (CDKN1A); melanoma differentiation-associated protein 6 (MDA6); CDK-interacting protein 1 (CIP1); WAF1; SDI1	FC03 FT09 FG00 SN00
+
+
+
+              
