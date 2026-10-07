@@ -49,6 +49,7 @@ No machine learning is used. Every flag can be traced to these rules and checked
 npm install
 npm run dev        # local development
 npm run build      # production build in dist/
+npm test           # unit tests for the flag rules
 npm run analysis   # regenerate src/data/glds53.json from analysis/raw/
 ```
 

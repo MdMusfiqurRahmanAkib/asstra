@@ -8,7 +8,8 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "analysis": "python3 analysis/glds53_analysis.py"
+    "analysis": "python3 analysis/glds53_analysis.py",
+    "test": "vitest run"
   },
   "dependencies": {
     "@fontsource-variable/public-sans": "^5.2.5",
@@ -27,7 +28,8 @@
     "globals": "^16.0.0",
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.30.1",
-    "vite": "^6.3.5"
+    "vite": "^6.3.5",
+    "vitest": "^5.0.3"
   },
   "description": "Daily health self-check for long-duration spaceflight crews, built on NASA GeneLab GLDS-53.",
   "license": "MIT"
