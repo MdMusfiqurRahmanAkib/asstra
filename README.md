@@ -6,7 +6,7 @@ Tether is a daily health self-check for astronauts on long-duration missions. In
 
 It was built for the NASA Space Apps Challenge brief on astronaut health self-monitoring, and its design is grounded in NASA GeneLab study **GLDS-53**, *Spaceflight Modulates Gene Expression in Astronauts*.
 
-Live app: `https://tether-crew.vercel.app` (replace with your deployment)
+Live app: https://mdmusfiqurrahmanakib.github.io/tether/
 
 ---
 
@@ -63,11 +63,9 @@ On Windows, where `python3` is usually not on the path, run `python analysis/gld
 
 ## Deploying
 
-The app is a static site. Any of these work without changes:
+The app is a static site hosted on GitHub Pages.
 
-* **Vercel**: import the repository, framework preset Vite. `vercel.json` is included. Name the project `tether-crew` to get `tether-crew.vercel.app`, or add a custom domain under Project Settings, Domains.
-* **Netlify**: import the repository. `netlify.toml` is included.
-* **GitHub Pages**: push to `main`, then in Settings, Pages, choose GitHub Actions as the source. The workflow in `.github/workflows/pages.yml` builds with the correct base path for the repository.
+Push to `main`, then in Settings, Pages, choose GitHub Actions as the source. The workflow in `.github/workflows/pages.yml` builds with the correct base path for the repository.
 
 ## Project layout
 
