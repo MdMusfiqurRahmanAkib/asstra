@@ -25,7 +25,7 @@ export interface State {
   onboarded: boolean
 }
 
-const KEY = 'tether.v1'
+const KEY = 'astra.v1'
 
 export const emptyState = (): State => ({
   version: 1,

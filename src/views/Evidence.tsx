@@ -161,7 +161,7 @@ export function Evidence() {
         <h2 id="link-h">From the lab to your check-in</h2>
         <p className="small ink2">
           Crew cannot run a transcriptome on orbit. What they can do is watch the signs these pathways show up as. Each pathway the study found changed
-          maps to something Tether asks about every day.
+          maps to something Astra asks about every day.
         </p>
         <div className="pw-list">
           <div className="pw-row pw-head xsmall ink2" aria-hidden="true">

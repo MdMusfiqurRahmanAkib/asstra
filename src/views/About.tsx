@@ -6,7 +6,7 @@ export function About() {
     <div className="stack" style={{ gap: 28 }}>
       <div className="page-head">
         <div>
-          <h1>About Tether</h1>
+          <h1>About Astra</h1>
           <p>Why it was made, who made it, how it is built and where the data comes from.</p>
         </div>
       </div>
@@ -15,7 +15,7 @@ export function About() {
         <article className="panel prose">
           <h2 style={{ marginTop: 0 }}>The project</h2>
           <p>
-            Tether was made for the NASA Space Apps Challenge brief on astronaut health self-monitoring, which asks for software that gathers health indicators
+            Astra was made for the NASA Space Apps Challenge brief on astronaut health self-monitoring, which asks for software that gathers health indicators
             and lets astronauts evaluate and act on the status of their health during long-duration missions.
           </p>
           <p>
@@ -24,7 +24,7 @@ export function About() {
           </p>
 
           <h2>Who made it</h2>
-          <p>Tether is a project by Md. Musfiqur Rahman Akib, Computer Science and Engineering, Chittagong Independent University, Bangladesh.</p>
+          <p>Astra is a project by Md. Musfiqur Rahman Akib, Computer Science and Engineering, Chittagong Independent University, Bangladesh.</p>
 
           <h2>How it is built</h2>
           <ul>
@@ -56,7 +56,7 @@ export function About() {
 
           <h2>Known limits</h2>
           <p>{STUDY.limitsLine}</p>
-          <p>The demo crew member is simulated and is labelled as demo data wherever it appears. Tether does not diagnose and does not replace the flight surgeon.</p>
+          <p>The demo crew member is simulated and is labelled as demo data wherever it appears. Astra does not diagnose and does not replace the flight surgeon.</p>
 
           <h2>Code and reuse</h2>
           <p>

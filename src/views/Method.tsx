@@ -6,8 +6,8 @@ export function Method() {
     <div className="stack" style={{ gap: 28 }}>
       <div className="page-head">
         <div>
-          <h1>How Tether works</h1>
-          <p>The rules behind every flag, the data behind the design, and what Tether does not do.</p>
+          <h1>How Astra works</h1>
+          <p>The rules behind every flag, the data behind the design, and what Astra does not do.</p>
         </div>
       </div>
 
@@ -15,7 +15,7 @@ export function Method() {
         <article className="panel prose">
           <h2 style={{ marginTop: 0 }}>The question it answers</h2>
           <p>
-            On a long mission the nearest clinic is days or months away, and crew are the first to notice change in themselves. Tether answers one question each
+            On a long mission the nearest clinic is days or months away, and crew are the first to notice change in themselves. Astra answers one question each
             day: is anything about me different from my own normal, and if so, what do I do about it?
           </p>
 
@@ -28,7 +28,7 @@ export function Method() {
           <h2>The rule for each indicator</h2>
           <ol>
             <li>
-              Your baseline is the check-ins logged before launch. If there are fewer than {MIN_BASELINE} of those, Tether uses your first {FALLBACK_BASELINE_DAYS}{' '}
+              Your baseline is the check-ins logged before launch. If there are fewer than {MIN_BASELINE} of those, Astra uses your first {FALLBACK_BASELINE_DAYS}{' '}
               check-ins instead. Until {MIN_BASELINE} values exist it only checks hard limits.
             </li>
             <li>
@@ -80,7 +80,7 @@ export function Method() {
           <h2>Analysis of GLDS-53</h2>
           <p>{STUDY.methodsLine}</p>
 
-          <h2>What Tether does not do</h2>
+          <h2>What Astra does not do</h2>
           <ul>
             <li>It does not diagnose. A flag means a value moved, not that something is wrong.</li>
             <li>It does not replace the flight surgeon. Every Act card says when to bring them in.</li>

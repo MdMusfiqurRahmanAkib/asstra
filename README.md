@@ -1,8 +1,8 @@
-# Tether
+# Astra
 
 **Notice when you drift from your own normal.**
 
-Tether is a daily health self-check for astronauts on long-duration missions. In about two minutes a crew member logs sleep, mood, a 3-minute reaction-time test, resting heart rate, blood pressure, temperature, immune symptoms, exercise, body mass, pain, vision and radiation dose. Tether compares every value with that person's own preflight baseline, shows what has moved, and gives clear on-board steps for what to do next and when to call the flight surgeon.
+Astra is a daily health self-check for astronauts on long-duration missions. In about two minutes a crew member logs sleep, mood, a 3-minute reaction-time test, resting heart rate, blood pressure, temperature, immune symptoms, exercise, body mass, pain, vision and radiation dose. Astra compares every value with that person's own preflight baseline, shows what has moved, and gives clear on-board steps for what to do next and when to call the flight surgeon.
 
 It was built for the NASA Space Apps Challenge brief on astronaut health self-monitoring, and its design is grounded in NASA GeneLab study **GLDS-53**, *Spaceflight Modulates Gene Expression in Astronauts*.
 
@@ -10,17 +10,17 @@ It was built for the NASA Space Apps Challenge brief on astronaut health self-mo
 
 The site opens on a project overview. Choose "Explore the demo" to open the app with a simulated crew member on flight day 46, with nothing to install and no account.
 
-![Overview page](docs/overview.jpg)
+![Overview page](docs/overview.png)
 
 | Status, with the baseline ring | The GLDS-53 re-analysis |
 | --- | --- |
-| ![Status screen](docs/status.jpg) | ![Data page](docs/data.jpg) |
+| ![Status screen](docs/status.png) | ![Data page](docs/data.png) |
 
 ---
 
-## How Tether answers the challenge
+## How Astra answers the challenge
 
-| The brief asks for software that... | Tether |
+| The brief asks for software that... | Astra |
 | --- | --- |
 | gathers health indicators | 17 indicators across sleep, mind and mood, heart and circulation, immune signs, bone and muscle, eyes and head, plus personal dosimeter readings. Includes a built-in 3-minute psychomotor vigilance test (PVT-B). |
 | covers immune change, bone loss, cardiovascular events and behavioral health | Each risk has its own indicators: immune symptoms and temperature; exercise, body mass and back pain; resting heart rate and blood pressure; mood, stress, connection, reaction time and attention lapses. |
@@ -32,14 +32,14 @@ The site opens on a project overview. Choose "Explore the demo" to open the app 
 
 GLDS-53 measured 234 stress-response genes in the whole blood of six Space Shuttle astronauts (four men, two women), ten days before launch (L−10) and two to three hours after landing (R+0) [1, 2].
 
-Tether re-analyses the deposited values pair by pair. The full script is in [`analysis/glds53_analysis.py`](analysis/glds53_analysis.py) and runs on the original files in `analysis/raw/`.
+Astra re-analyses the deposited values pair by pair. The full script is in [`analysis/glds53_analysis.py`](analysis/glds53_analysis.py) and runs on the original files in `analysis/raw/`.
 
 * The deposited per-sample values match the authors' published fold-change table exactly (0 mismatches across all genes and samples).
 * 42 genes were measured in at least four astronauts, the authors' own inclusion rule, and were tested.
 * Four reach p < 0.05 in a two-sided paired t-test: **FOS** up, and **HSPB1**, **RAD23A** and **XRCC1** down. These overlap with the genes highlighted in the original paper. None survive Benjamini-Hochberg correction for 42 tests (smallest q = 0.20), so they are treated as leads, not proof.
 * 21 genes were measured in all six astronauts and changed in every one of them. **Only one, HSPA6, moved in the same direction in all six.** The other 20 rose in some astronauts and fell in others.
 
-That last result is the core design decision. If one flight can push the same pathway up in one astronaut and down in another, a population reference range is the wrong yardstick for self-monitoring. Tether therefore judges every indicator against the crew member's own baseline. The Evidence view in the app shows this with a per-astronaut heat map, a paired slope chart for any gene, a direction-agreement chart and a volcano plot.
+That last result is the core design decision. If one flight can push the same pathway up in one astronaut and down in another, a population reference range is the wrong yardstick for self-monitoring. Astra therefore judges every indicator against the crew member's own baseline. The Evidence view in the app shows this with a per-astronaut heat map, a paired slope chart for any gene, a direction-agreement chart and a volcano plot.
 
 ## The rule behind every flag
 
@@ -83,7 +83,7 @@ src/data/glds53.json      analysis output used by the app
 src/lib/baseline.ts       personal baseline and flag rules
 src/lib/indicators.ts     indicator definitions, units and hard limits
 src/lib/protocols.ts      on-board steps for each indicator
-src/components/           tether ring, sparklines, vigilance test, site header and footer
+src/components/           baseline ring, sparklines, vigilance test, site header and footer
 src/views/                site pages (Home, Evidence, Method, About) and app pages (Status, Check in, Act, Settings)
 ```
 
@@ -93,7 +93,7 @@ The site pages are open to everyone. The app pages need a profile or the demo da
 
 GLDS-53 is six astronauts on short Shuttle flights, one sample before and one after. The after sample was drawn two to three hours after landing, so it mixes the effects of flight with the stress of re-entry and landing. The original raw data were lost to hurricane damage, so only processed values exist, and three astronauts have most genes filtered out. The array covers 234 stress genes, not the whole genome.
 
-Tether does not diagnose and does not replace the flight surgeon. The demo crew member in the app is simulated and labelled as such.
+Astra does not diagnose and does not replace the flight surgeon. The demo crew member in the app is simulated and labelled as such.
 
 ## References
 

@@ -77,7 +77,7 @@
 .ring-pt .hit {
   fill: transparent;
 }
-.ring-pt .tether {
+.ring-pt .stem {
   stroke: var(--muted);
   stroke-width: 1.2;
   opacity: 0.55;
@@ -104,7 +104,7 @@
   fill: var(--watch);
   stroke: var(--surface);
 }
-.ring-pt.watch .tether {
+.ring-pt.watch .stem {
   stroke: var(--watch);
   opacity: 0.9;
 }
@@ -112,7 +112,7 @@
   fill: var(--act);
   stroke: var(--surface);
 }
-.ring-pt.act .tether {
+.ring-pt.act .stem {
   stroke: var(--act);
   opacity: 0.9;
   stroke-width: 1.6;

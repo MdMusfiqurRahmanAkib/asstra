@@ -4,7 +4,7 @@ import { readAll, type Reading } from '../lib/baseline'
 import { DOMAINS } from '../lib/indicators'
 import { flightDay, formatDate, phaseOf, daysBetween, type Entry, type Profile } from '../lib/store'
 import { fmt, levelWords } from '../lib/format'
-import { TetherRing } from '../components/TetherRing'
+import { BaselineRing } from '../components/BaselineRing'
 import { Spark } from '../components/Spark'
 
 const CAREER_LIMIT = 600 // mSv, NASA-STD-3001 Vol. 1 Rev. B
@@ -135,7 +135,7 @@ export function Board({ readings, entries, profile, viewDate, selected, onSelect
         <h2 id="ring-h" className="sr-only">
           All indicators against your baseline
         </h2>
-        <TetherRing
+        <BaselineRing
           readings={readings}
           selected={selected}
           onSelect={onSelect}
@@ -163,7 +163,7 @@ export function Board({ readings, entries, profile, viewDate, selected, onSelect
             <p className="ink2 small" style={{ marginTop: 8 }}>
               {entries.length
                 ? 'Nothing is outside your usual range. Keep checking in at the same time each day so the baseline stays honest.'
-                : 'Log about a week of normal days and Tether learns what usual looks like for you. Until then it only checks hard limits like fever.'}
+                : 'Log about a week of normal days and Astra learns what usual looks like for you. Until then it only checks hard limits like fever.'}
             </p>
           ) : (
             <ul className="attn">

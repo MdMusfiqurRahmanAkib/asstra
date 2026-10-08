@@ -14,7 +14,7 @@ interface Props {
   center: React.ReactNode
 }
 
-export function TetherRing({ readings, selected, onSelect, center }: Props) {
+export function BaselineRing({ readings, selected, onSelect, center }: Props) {
   const layout = useMemo(() => {
     const groups = DOMAINS.map((d) => ({ d, items: readings.filter((r) => r.indicator.domain === d.id) }))
     const slots = readings.length + groups.length
@@ -110,7 +110,7 @@ export function TetherRing({ readings, selected, onSelect, center }: Props) {
                 }
               }}
             >
-              <line x1={bx} y1={by} x2={x} y2={y} className="tether" />
+              <line x1={bx} y1={by} x2={x} y2={y} className="stem" />
               <circle cx={x} cy={y} r={14} className="hit" />
               <circle cx={x} cy={y} r={isSel ? 7.5 : has ? 5.5 : 4} className="pt" />
               <title>{label}</title>

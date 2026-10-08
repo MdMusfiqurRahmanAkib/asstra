@@ -19,14 +19,14 @@ const SITE: Route[] = ['home', 'evidence', 'method', 'about']
 const APP: Route[] = ['status', 'checkin', 'act', 'settings']
 
 const TITLES: Record<Route, string> = {
-  home: 'Tether: a daily health self-check for astronauts',
-  evidence: 'The data | Tether',
-  method: 'How it works | Tether',
-  about: 'About | Tether',
-  status: 'Status | Tether',
-  checkin: 'Check in | Tether',
-  act: 'Act | Tether',
-  settings: 'Settings | Tether',
+  home: 'Astra: a daily health self-check for astronauts',
+  evidence: 'The data | Astra',
+  method: 'How it works | Astra',
+  about: 'About | Astra',
+  status: 'Status | Astra',
+  checkin: 'Check in | Astra',
+  act: 'Act | Astra',
+  settings: 'Settings | Astra',
 }
 
 function useRoute(): [Route, (r: Route) => void] {
@@ -49,7 +49,7 @@ function useRoute(): [Route, (r: Route) => void] {
 function useTheme() {
   const [theme, setTheme] = useState<'light' | 'dark' | null>(() => {
     try {
-      return (localStorage.getItem('tether.theme') as 'light' | 'dark' | null) ?? null
+      return (localStorage.getItem('astra.theme') as 'light' | 'dark' | null) ?? null
     } catch {
       return null
     }
@@ -58,8 +58,8 @@ function useTheme() {
     if (theme) document.documentElement.dataset.theme = theme
     else delete document.documentElement.dataset.theme
     try {
-      if (theme) localStorage.setItem('tether.theme', theme)
-      else localStorage.removeItem('tether.theme')
+      if (theme) localStorage.setItem('astra.theme', theme)
+      else localStorage.removeItem('astra.theme')
     } catch {
       /* ignore */
     }
@@ -163,7 +163,7 @@ export default function App() {
         <aside className="rail">
           <a className="brand" href="#/home">
             <Logo />
-            Tether
+            Astra
           </a>
           <nav className="nav" aria-label="App">
             {NAV.map(({ id, label, Icon }) => (
@@ -197,7 +197,7 @@ export default function App() {
         <header className="topbar">
           <a className="brand" href="#/home" style={{ padding: 0 }}>
             <Logo size={22} />
-            Tether
+            Astra
           </a>
           <div className="row" style={{ gap: 6 }}>
             {store.state.demo && <span className="demo-flag">Demo</span>}
