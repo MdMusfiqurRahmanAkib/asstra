@@ -3,5 +3,3 @@ dist
 *.local
 .DS_Store
 __pycache__/
-CLAUDE.md
-.claude/
