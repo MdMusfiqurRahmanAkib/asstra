@@ -6,7 +6,7 @@ Astra is a daily health self-check for astronauts on long-duration missions. In 
 
 It was built for the NASA Space Apps Challenge brief on astronaut health self-monitoring, and its design is grounded in NASA GeneLab study **GLDS-53**, *Spaceflight Modulates Gene Expression in Astronauts*.
 
-**Live site: https://mdmusfiqurrahmanakib.github.io/tether/**
+**Live site: https://mdmusfiqurrahmanakib.github.io/astra/**
 
 The site opens on a project overview. Choose "Explore the demo" to open the app with a simulated crew member on flight day 46, with nothing to install and no account.
 

@@ -88,7 +88,7 @@ export function About() {
             <dt>Source</dt>
             <dd>
               <a href={REPO} target="_blank" rel="noreferrer">
-                github.com/MdMusfiqurRahmanAkib/tether
+                github.com/MdMusfiqurRahmanAkib/astra
               </a>
             </dd>
           </dl>
