@@ -163,7 +163,7 @@ export function Board({ readings, entries, profile, viewDate, selected, onSelect
             <p className="ink2 small" style={{ marginTop: 8 }}>
               {entries.length
                 ? 'Nothing is outside your usual range. Keep checking in at the same time each day so the baseline stays honest.'
-                : 'Log about a week of normal days and Astra learns what usual looks like for you. Until then it only checks hard limits like fever.'}
+                : 'Log about a week of normal days and Asstra learns what usual looks like for you. Until then it only checks hard limits like fever.'}
             </p>
           ) : (
             <ul className="attn">

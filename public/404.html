@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page not found | Astra</title>
+    <title>Page not found | Asstra</title>
     <script>
-      // Pages inside Astra are hash routes, so any unknown path goes back to the start page.
+      // Pages inside Asstra are hash routes, so any unknown path goes back to the start page.
       var home = location.pathname.split('/').slice(0, 2).join('/') + '/'
       if (location.pathname !== home) location.replace(home)
     </script>
@@ -22,6 +22,6 @@
   </head>
   <body>
     <h1>Page not found</h1>
-    <p><a href="./">Go to the Astra start page</a></p>
+    <p><a href="./">Go to the Asstra start page</a></p>
   </body>
 </html>

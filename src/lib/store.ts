@@ -25,7 +25,7 @@ export interface State {
   onboarded: boolean
 }
 
-const KEY = 'astra.v1'
+const KEY = 'asstra.v1'
 
 export const emptyState = (): State => ({
   version: 1,

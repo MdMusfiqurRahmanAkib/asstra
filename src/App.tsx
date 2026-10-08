@@ -19,14 +19,14 @@ const SITE: Route[] = ['home', 'evidence', 'method', 'about']
 const APP: Route[] = ['status', 'checkin', 'act', 'settings']
 
 const TITLES: Record<Route, string> = {
-  home: 'Astra: a daily health self-check for astronauts',
-  evidence: 'The data | Astra',
-  method: 'How it works | Astra',
-  about: 'About | Astra',
-  status: 'Status | Astra',
-  checkin: 'Check in | Astra',
-  act: 'Act | Astra',
-  settings: 'Settings | Astra',
+  home: 'Asstra: a daily health self-check for astronauts',
+  evidence: 'The data | Asstra',
+  method: 'How it works | Asstra',
+  about: 'About | Asstra',
+  status: 'Status | Asstra',
+  checkin: 'Check in | Asstra',
+  act: 'Act | Asstra',
+  settings: 'Settings | Asstra',
 }
 
 function useRoute(): [Route, (r: Route) => void] {
@@ -49,7 +49,7 @@ function useRoute(): [Route, (r: Route) => void] {
 function useTheme() {
   const [theme, setTheme] = useState<'light' | 'dark' | null>(() => {
     try {
-      return (localStorage.getItem('astra.theme') as 'light' | 'dark' | null) ?? null
+      return (localStorage.getItem('asstra.theme') as 'light' | 'dark' | null) ?? null
     } catch {
       return null
     }
@@ -58,8 +58,8 @@ function useTheme() {
     if (theme) document.documentElement.dataset.theme = theme
     else delete document.documentElement.dataset.theme
     try {
-      if (theme) localStorage.setItem('astra.theme', theme)
-      else localStorage.removeItem('astra.theme')
+      if (theme) localStorage.setItem('asstra.theme', theme)
+      else localStorage.removeItem('asstra.theme')
     } catch {
       /* ignore */
     }
@@ -163,7 +163,7 @@ export default function App() {
         <aside className="rail">
           <a className="brand" href="#/home">
             <Logo />
-            Astra
+            Asstra
           </a>
           <nav className="nav" aria-label="App">
             {NAV.map(({ id, label, Icon }) => (
@@ -197,7 +197,7 @@ export default function App() {
         <header className="topbar">
           <a className="brand" href="#/home" style={{ padding: 0 }}>
             <Logo size={22} />
-            Astra
+            Asstra
           </a>
           <div className="row" style={{ gap: 6 }}>
             {store.state.demo && <span className="demo-flag">Demo</span>}

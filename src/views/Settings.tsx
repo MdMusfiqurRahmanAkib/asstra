@@ -19,7 +19,7 @@ export function Settings() {
   const fileRef = useRef<HTMLInputElement>(null)
   const [confirmClear, setConfirmClear] = useState(false)
 
-  const exportJson = () => download(`astra-${new Date().toISOString().slice(0, 10)}.json`, JSON.stringify(state, null, 2), 'application/json')
+  const exportJson = () => download(`asstra-${new Date().toISOString().slice(0, 10)}.json`, JSON.stringify(state, null, 2), 'application/json')
 
   const exportCsv = () => {
     const cols = ['date', ...INDICATORS.map((i) => i.id), ...SYMPTOMS.map((s) => `symptom_${s.id}`), 'dose_mission_mSv', 'note']
@@ -32,7 +32,7 @@ export function Settings() {
         `"${(e.note ?? '').replace(/"/g, '""')}"`,
       ].join(','),
     )
-    download(`astra-${new Date().toISOString().slice(0, 10)}.csv`, [cols.join(','), ...rows].join('\n'), 'text/csv')
+    download(`asstra-${new Date().toISOString().slice(0, 10)}.csv`, [cols.join(','), ...rows].join('\n'), 'text/csv')
   }
 
   const importJson = async (f: File) => {
@@ -42,7 +42,7 @@ export function Settings() {
       setState({ ...emptyState(), ...parsed, onboarded: true })
       toast(`Imported ${parsed.entries.length} check-ins`)
     } catch {
-      toast('That file is not an Astra export')
+      toast('That file is not an Asstra export')
     }
   }
 

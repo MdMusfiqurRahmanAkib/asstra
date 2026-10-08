@@ -1,5 +1,5 @@
 // Offline support: crews lose the ground link for long stretches.
-const CACHE = 'astra-v1'
+const CACHE = 'asstra-v1'
 const SCOPE = self.registration.scope
 
 self.addEventListener('install', (e) => {

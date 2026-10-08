@@ -35,14 +35,14 @@ const TRUST = [
   },
   {
     title: 'Honest about limits',
-    text: 'Six astronauts and one dataset cannot prove a clinical effect. Astra does not diagnose and does not replace the flight surgeon.',
+    text: 'Six astronauts and one dataset cannot prove a clinical effect. Asstra does not diagnose and does not replace the flight surgeon.',
   },
 ]
 
 const FAQ = [
   {
-    q: 'Is Astra a medical device?',
-    a: 'No. Astra does not diagnose and does not replace the flight surgeon. It helps a crew member notice a change early and decide when to raise it.',
+    q: 'Is Asstra a medical device?',
+    a: 'No. Asstra does not diagnose and does not replace the flight surgeon. It helps a crew member notice a change early and decide when to raise it.',
   },
   {
     q: 'Where is my data stored?',
@@ -57,12 +57,12 @@ const FAQ = [
     a: 'No. The demo crew member is simulated so the app can be explored without entering anything. It is labelled as demo data wherever it appears.',
   },
   {
-    q: 'How does Astra decide what to flag?',
+    q: 'How does Asstra decide what to flag?',
     a: 'It takes the median of your baseline check-ins as your usual value and measures how far today is from it, compared with your normal day-to-day variation. Twice that variation is Watch, three times is Act, and three Watch days in a row also become Act. Hard limits, such as a temperature of 38.0 °C or more, always trigger Act.',
   },
   {
-    q: 'The NASA study is about genes. Why does Astra track daily signs?',
-    a: 'Astra does not measure gene expression. The study is used for one lesson: the same flight changed the same genes in opposite directions in different astronauts, so a personal baseline is a better yardstick than a population average.',
+    q: 'The NASA study is about genes. Why does Asstra track daily signs?',
+    a: 'Asstra does not measure gene expression. The study is used for one lesson: the same flight changed the same genes in opposite directions in different astronauts, so a personal baseline is a better yardstick than a population average.',
   },
   {
     q: 'Can the analysis be checked?',
@@ -107,7 +107,7 @@ export function Home({ onDemo }: { onDemo: () => void }) {
             <p className="kicker">NASA Space Apps Challenge project</p>
             <h1>A daily health self-check for astronauts on long missions.</h1>
             <p className="lede">
-              Astra compares each crew member with their own preflight baseline, shows what has changed, and gives clear steps for what to do next.
+              Asstra compares each crew member with their own preflight baseline, shows what has changed, and gives clear steps for what to do next.
             </p>
 
             {state.onboarded ? (
@@ -361,7 +361,7 @@ export function Home({ onDemo }: { onDemo: () => void }) {
           </div>
 
           <p className="takeaway">
-            The same flight pushed the same gene in opposite directions in different people. A population average would hide that, so Astra judges every
+            The same flight pushed the same gene in opposite directions in different people. A population average would hide that, so Asstra judges every
             indicator against the person’s own baseline.
           </p>
           <p className="small ink2">
@@ -382,7 +382,7 @@ export function Home({ onDemo }: { onDemo: () => void }) {
       <section className="sec alt">
         <div className="wrap">
           <div className="sec-head">
-            <h2>What Astra tracks</h2>
+            <h2>What Asstra tracks</h2>
             <p className="num">
               {INDICATORS.length} indicators across {DOMAINS.length} areas of health, plus the reading from the personal radiation dosimeter.
             </p>

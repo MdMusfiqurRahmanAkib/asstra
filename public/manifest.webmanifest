@@ -1,6 +1,6 @@
 {
-  "name": "Astra",
-  "short_name": "Astra",
+  "name": "Asstra",
+  "short_name": "Asstra",
   "description": "Daily health self-check for long-duration spaceflight crews.",
   "start_url": "./#/status",
   "display": "standalone",

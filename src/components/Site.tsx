@@ -32,7 +32,7 @@ export function SiteHeader({ route, isDark, onToggleTheme, onboarded, onDemo }: 
       <div className="wrap site-head-in">
         <a className="brand" href="#/home" style={{ padding: 0 }}>
           <Logo />
-          Astra
+          Asstra
         </a>
         <nav className="site-nav" aria-label="Site">
           {links}
@@ -71,7 +71,7 @@ export function SiteFooter() {
         <div className="foot-brand">
           <div className="brand" style={{ padding: 0 }}>
             <Logo size={24} />
-            Astra
+            Asstra
           </div>
           <p className="small ink2">A daily health self-check for long-duration spaceflight crews, built on NASA GeneLab study GLDS-53.</p>
         </div>
@@ -103,7 +103,7 @@ export function SiteFooter() {
       <div className="wrap foot-legal xsmall muted">
         <p>© 2026 Md. Musfiqur Rahman Akib. Code released under the MIT License. GLDS-53 data are public NASA open science data.</p>
         <p>
-          Astra is an independent project made for the NASA Space Apps Challenge. It is not endorsed by NASA, it does not diagnose, and it does not replace
+          Asstra is an independent project made for the NASA Space Apps Challenge. It is not endorsed by NASA, it does not diagnose, and it does not replace
           the flight surgeon.
         </p>
       </div>
